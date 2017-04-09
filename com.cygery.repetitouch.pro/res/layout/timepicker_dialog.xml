@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+	<LinearLayout android:layout_gravity="17" android:orientation="0" android:layout_width="-2" android:layout_height="-2">
+		<NumberPicker android:id="false" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" />
+		<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:text=":" />
+		<NumberPicker android:id="false" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" />
+		<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:text=":" />
+		<NumberPicker android:id="false" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" />
+	</LinearLayout>
+</LinearLayout>

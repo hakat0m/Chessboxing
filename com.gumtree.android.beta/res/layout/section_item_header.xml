@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dev.dworks.libs.astickyheader.ui.HeaderLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/header_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="@style/Text_Body2_Inverse" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/header" android:background="@color/bark_80" android:paddingLeft="@dimen/keyline" android:paddingTop="@dimen/keyline_half" android:paddingRight="@dimen/keyline" android:paddingBottom="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_nearby" android:textIsSelectable="false" />
+    <View android:background="@drawable/shadow" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f010204" />
+</dev.dworks.libs.astickyheader.ui.HeaderLayout>

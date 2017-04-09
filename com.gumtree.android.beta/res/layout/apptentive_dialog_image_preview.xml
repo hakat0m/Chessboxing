@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/preview_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.apptentive.android.sdk.util.image.PreviewImageView android:id="@+id/preview_image" android:background="?attr/apptentiveViewBackground" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/apptentive_ic_image_default_item" android:scaleType="matrix" android:contentDescription="@styleable/View_android_theme" />
+    <RelativeLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/header_bar" android:background="@drawable/apptentive_preview_gradient" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <ImageButton android:id="@+id/close_dialog" android:background="?unknown_attr_ref: 101030e" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x7f0800b3" android:layout_height="UNKNOWN_DATA_0x7f0800b3" android:src="@drawable/apptentive_ic_back_preview" android:tint="?unknown_attr_ref: 1010039" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="Close" />
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/preview_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@*style/Widget.ProgressBar.Large" />
+</FrameLayout>

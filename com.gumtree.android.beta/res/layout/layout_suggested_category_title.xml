@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textAppearance="@style/Text_SectionTitle" android:id="@+id/suggested_category_header" android:paddingLeft="@dimen/keyline" android:paddingTop="@dimen/keyline" android:paddingRight="@dimen/keyline" android:paddingBottom="@dimen/keyline_quarter" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/suggested_categories_header" />

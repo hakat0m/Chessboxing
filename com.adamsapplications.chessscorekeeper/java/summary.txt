@@ -1,0 +1,2 @@
+Summary for /storage/emulated/0/ShowJava/sources/com.adamsapplications.chessscorekeeper/com.adamsapplications.chessscorekeeper.jar
+Decompiled with CFR 0_110

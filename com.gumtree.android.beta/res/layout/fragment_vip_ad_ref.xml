@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="@dimen/keyline" android:paddingRight="@dimen/keyline_half" android:paddingBottom="@dimen/keyline" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/ad_ref_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/keyline" style="@style/Text_Body1" font="fonts/Roboto-Light.ttf" />
+</FrameLayout>

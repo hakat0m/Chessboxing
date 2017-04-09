@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:padding="@dimen/keyline_2x" app:layout_width="match_parent" app:layout_height="match_parent">
+    <FrameLayout app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content">
+        <ImageView app:id="@+id/reset_password_email_sent_icon" app:layout_width="UNKNOWN_DATA_0x5001" app:layout_height="UNKNOWN_DATA_0x5001" app:contentDescription="@string/content_desc_check_background" app:srcCompat="@drawable/circular_check_background" />
+        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/check" app:padding="4dp" app:layout_width="UNKNOWN_DATA_0x4801" app:layout_height="UNKNOWN_DATA_0x4801" app:contentDescription="@string/content_desc_postad_check" app:srcCompat="@drawable/ic_check_white" />
+    </FrameLayout>
+    <TextView app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/keyline_1_5x" app:text="@string/activation_dialog" style="@style/Text_Subhead" />
+    <Button app:id="@+id/activate_login_now" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline" app:layout_marginTop="@dimen/keyline_1_5x" app:layout_marginRight="@dimen/keyline" app:text="@string/login_now" style="@style/Button_PrimaryAction" />
+</LinearLayout>

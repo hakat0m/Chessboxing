@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/apptentiveViewBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:paddingLeft="@dimen/apptentive_message_center_greeting_side_margin" android:paddingRight="@dimen/apptentive_message_center_greeting_side_margin" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/icon" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="@style/Apptentive_TextAppearance_Caption" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/config_loading_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="64dp" style="@style/Widget_AppCompat_ProgressBar" />
+</FrameLayout>

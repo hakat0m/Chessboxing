@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/vip_mpu_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:layout_width="UNKNOWN_DATA_0xa400021" android:layout_height="UNKNOWN_DATA_0xa400021" android:indeterminate="true" android:layout_centerInParent="true" />
+    <RelativeLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/vip_mpu_wrapper" android:layout_width="match_parent" android:layout_height="match_parent" /> />

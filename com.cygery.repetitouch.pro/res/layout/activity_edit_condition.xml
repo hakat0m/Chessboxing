@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<TableRow android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+		<TextView android:textSize="20sp" android:textColor="ffff4444" android:gravity="17" android:layout_gravity="16" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_span="2" android:text="WARNING: Support for automation tools is currently disabled. You can enable it in RepetiTouch&apos;s settings." android:layout_weight="{4:1065353216}" />
+	</TableRow>
+	<TableRow android:id="false" android:padding="5dp" android:layout_width="-1" android:layout_height="-2">
+		<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="5dp" android:text="Condition" />
+		<Spinner android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_weight="{4:1065353216}" />
+	</TableRow>
+	<TableRow android:id="false" android:layout_width="-1" android:layout_height="-2">
+		<View android:layout_height="0dp" />
+		<View android:layout_height="0dp" />
+	</TableRow>
+</TableLayout>

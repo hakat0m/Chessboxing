@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Account">
+        <Preference android:key="is_logged" />
+        <Preference android:title="@string/settings_account_details_title" android:key="account_details" android:summary="@string/settings_account_details_subtitle" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Search">
+        <Preference android:title="@string/text_clear_search_history" android:key="clear_search" android:summary="@string/text_clear_search_data" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/notification_settings">
+        <SwitchPreference android:title="@string/notifications_saved_searches_title" android:key="preference_key_notification_saved_searches" android:summary="@string/notifications_saved_searches_description" android:defaultValue="true" />
+        <SwitchPreference android:title="@string/notifications_chat_message_title" android:key="preference_key_notification_chat_message" android:summary="@string/notifications_chat_message_description" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/text_app_info">
+        <Preference android:title="@string/text_app_version" android:key="version" />
+    </PreferenceCategory>
+    <ListPreference android:title="@string/environment_preference_title" android:key="@string/environment_preference_key" android:summary="@string/environment_preference_summary" />
+</PreferenceScreen>

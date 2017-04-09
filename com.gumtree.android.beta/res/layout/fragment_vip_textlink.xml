@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ProgressBar android:id="@+id/vip_textlink_progressbar" android:layout_width="UNKNOWN_DATA_0xa400021" android:layout_height="UNKNOWN_DATA_0xa400021" android:indeterminate="true" android:layout_centerInParent="true" />
+    <RelativeLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/vip_textlink_wrapper" android:background="@drawable/background_grey_border" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerHorizontal="true" /> />

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" dragAndDrop:orientation="vertical" dragAndDrop:layout_width="match_parent" dragAndDrop:layout_height="wrap_content">
+    <TextView dragAndDrop:textColor="@color/ebk_image_picker_drag_drop_hint_color" dragAndDrop:id="@+id/drag_drop_hint" dragAndDrop:visibility="invisible" dragAndDrop:layout_width="match_parent" dragAndDrop:layout_height="wrap_content" dragAndDrop:layout_marginLeft="@dimen/gutter" dragAndDrop:layout_marginTop="@dimen/gutter" dragAndDrop:layout_marginRight="@dimen/gutter" dragAndDrop:text="@string/ebk_image_picker_drag_to_order" dragAndDrop:maxLines="1" dragAndDrop:drawableLeft="@drawable/ebk_image_picker_ic_drag" dragAndDrop:drawablePadding="@dimen/gutter" />
+    <RelativeLayout dragAndDrop:layout_width="match_parent" dragAndDrop:layout_height="wrap_content" dragAndDrop:layout_marginTop="@dimen/gutter">
+        <HorizontalScrollView dragAndDrop:id="@+id/scrollview" dragAndDrop:scrollbars="UNKNOWN_DATA_0x0" dragAndDrop:layout_width="match_parent" dragAndDrop:layout_height="UNKNOWN_DATA_0x7f080109" dragAndDrop:fillViewport="false">
+            <com.ebay.kleinanzeigen.imagepicker.drag_and_drop.CoolDragAndDropGridView dragAndDrop:id="@+id/cooldraganddropview" dragAndDrop:layout_width="match_parent" dragAndDrop:layout_height="wrap_content" dragAndDrop:itemMargin="5dp" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+</LinearLayout>

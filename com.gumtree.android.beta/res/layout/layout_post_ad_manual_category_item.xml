@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/category_item" app:background="?unknown_attr_ref: 101030e" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f08004a">
+    <com.gumtree.android.common.views.TintImageView app:id="@+id/postad_node_indicator" app:layout_width="UNKNOWN_DATA_0x2401" app:layout_height="UNKNOWN_DATA_0x2401" app:layout_marginRight="@dimen/keyline" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:supportTintColor="?attr/gumtreeColorIcon" app:srcCompat="@drawable/ic_chevron_right_white_24dp" />
+    <TextView app:textSize="16sp" app:textColor="@color/bark_text" app:ellipsize="end" app:id="@+id/postad_category_name" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline" app:layout_marginRight="@dimen/keyline" app:lines="1" app:layout_toLeftOf="@+id/postad_node_indicator" app:layout_centerVertical="true" />
+</RelativeLayout>

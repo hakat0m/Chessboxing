@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" android:paddingLeft="0dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:layout_width="-1" android:layout_height="-1">
+	<FrameLayout android:id="false" android:layout_width="-1" android:layout_height="-1" />
+	<WebView android:id="false" android:layout_width="-1" android:layout_height="-1" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+	<ProgressBar android:id="false" android:layout_width="-2" android:layout_height="-2" android:indeterminate="true" android:indeterminateDrawable="res/layout/spinr.xml" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:layout_alignParentRight="false" android:layout_alignParentBottom="false" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+	<ImageView android:id="false" android:layout_width="-2" android:layout_height="-2" android:src="res/drawable/splash.png" android:scaleType="1" android:layout_toLeftOf="false" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="" />
+</RelativeLayout>

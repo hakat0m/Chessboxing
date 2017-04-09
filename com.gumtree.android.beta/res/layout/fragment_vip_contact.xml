@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@drawable/grey_gradient_shadow_up" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f010205" />
+    <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f010204" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/vip_contact_container" android:background="?attr/backgroundColorPrimary" android:paddingLeft="@dimen/keyline_quarter" android:paddingTop="@dimen/keyline_half" android:paddingRight="@dimen/keyline_quarter" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:paddingLeft="@dimen/keyline_half" android:paddingRight="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/Text_Body1" android:ellipsize="end" android:id="@+id/contactName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@+id/contactPostSince" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textAppearance="@style/Text_Caption" android:id="@+id/contactPostSince" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.gumtree.android.ui.widget.SpinnerButton android:id="@+id/vip_action_call" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_quarter" android:layout_marginRight="@dimen/keyline_quarter" android:layout_marginBottom="@dimen/keyline_half" android:layout_weight="1.0" />
+            <Button android:id="@+id/vip_action_message" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_quarter" android:layout_marginRight="@dimen/keyline_quarter" android:layout_marginBottom="@dimen/keyline_half" android:text="@string/text_sms" android:layout_weight="1.0" style="@style/Button_PrimaryAction" />
+            <Button android:id="@+id/vip_action_reply" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_quarter" android:layout_marginRight="@dimen/keyline_quarter" android:layout_marginBottom="@dimen/keyline_half" android:layout_weight="1.0" style="@style/Button_PrimaryAction" />
+            <com.gumtree.android.ui.widget.RichButton android:id="@+id/vip_action_web" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_quarter" android:layout_marginRight="@dimen/keyline_quarter" android:layout_marginBottom="@dimen/keyline_half" android:text="@string/text_web" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/backgroundColorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" style="@style/ToolbarStyle_NoSpace" />
+    <FrameLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:paddingLeft="1px" android:paddingRight="1px" android:layout_width="UNKNOWN_DATA_0x7f080045" android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView android:id="@+id/promote_options" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

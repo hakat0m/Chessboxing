@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="0x102000a" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="?attr/selectableItemBackground" android:scrollingCache="true" android:divider="@styleable/View_android_theme" />
+    <TextView android:id="0x1020004" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@+id/loading" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_loading" />
+</RelativeLayout>

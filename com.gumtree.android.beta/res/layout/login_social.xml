@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.facebook.widget.LoginButton fb:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" fb:id="@+id/authButton" fb:layout_width="match_parent" fb:layout_height="UNKNOWN_DATA_0x2d01" fb:login_text="@string/facebook_login_btn" fb:logout_text="@string/facebook_login_btn" />
+</LinearLayout>

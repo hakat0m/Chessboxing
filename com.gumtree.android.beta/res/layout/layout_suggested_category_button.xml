@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="?attr/selectableItemBackground" app:paddingLeft="@dimen/keyline" app:paddingRight="@dimen/keyline" app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="?unknown_attr_ref: 101004d">
+    <TextView app:textAppearance="@style/Text_Body2" app:id="@+id/show_more" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/more_suggestion_text" app:layout_alignParentLeft="true" app:layout_centerVertical="true" />
+    <com.gumtree.android.common.views.TintImageView app:id="0x1020008" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_keyboard_arrow_down_white_24dp" app:scaleType="center" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:supportTintColor="?attr/colorIconAction" />
+</RelativeLayout>

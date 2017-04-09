@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="promotion_info_lines_bumped_up">
+        <item>@string/text_bump_up_ad_1</item>
+    </array>
+    <array name="promotion_info_lines_featured">
+        <item>@string/text_feature_ad_1</item>
+        <item>@string/text_feature_ad_2</item>
+        <item>@string/text_feature_ad_3</item>
+    </array>
+    <array name="promotion_info_lines_spotlight">
+        <item>@string/text_spotlight_ad_1</item>
+        <item>@string/text_spotlight_ad_2</item>
+    </array>
+    <array name="promotion_info_lines_unsupported">
+    </array>
+    <array name="promotion_info_lines_urgent">
+        <item>@string/text_urgent_ad_1</item>
+        <item>@string/text_urgent_ad_2</item>
+        <item>@string/text_urgent_ad_3</item>
+    </array>
+</resources>

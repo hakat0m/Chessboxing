@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:animateLayoutChanges="true">
+    <CheckBox app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/checkbox" app:paddingTop="5dp" app:saveEnabled="false" app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="48dp" app:drawablePadding="0dp" style="?attr/apptentiveRadioButtonStyle" />
+    <android.support.design.widget.TextInputLayout app:id="@+id/other_text_input_layout" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:animateLayoutChanges="true" app:errorEnabled="true" app:hintAnimationEnabled="true">
+        <EditText app:textAppearance="@style/Apptentive_TextAppearance_Body1" app:id="@+id/other_edit_text" app:saveEnabled="false" app:layout_width="match_parent" app:layout_height="wrap_content" app:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

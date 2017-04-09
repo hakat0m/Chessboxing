@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ImageView app:id="@+id/postad_summary_background_image" app:layout_width="match_parent" app:layout_height="match_parent" app:src="@drawable/bg_img_post_ad" app:scaleType="centerCrop" />
+    <View app:background="@color/branch_opacity_40" app:layout_width="match_parent" app:layout_height="match_parent" />
+    <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+        <include app:id="@+id/toolbar" layout="@layout/toolbar" />
+        <com.gumtree.android.postad.views.ScrollViewListenerScrollView app:id="@+id/postad_summary_container" app:layout_width="match_parent" app:layout_height="match_parent">
+            <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content"
+                <LinearLayout app:orientation="vertical" app:id="@+id/postad_card_content" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/postad_content_bottom_margin_big">
+                    <FrameLayout app:id="@+id/postad_pictures_container" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4801" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:layout_marginBottom="12dp">
+                        <android.support.v7.widget.CardView app:id="@+id/postad_summary_image_capture_container" app:background="0x106000b" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4801" app:foreground="?attr/selectableItemBackground">
+                            <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="match_parent">
+                                <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/postad_summary_image_capture" app:paddingLeft="@dimen/keyline" app:paddingRight="@dimen/keyline_half" app:layout_width="UNKNOWN_DATA_0x5a01" app:layout_height="UNKNOWN_DATA_0x5a01" app:tint="?attr/colorPrimaryAction" app:srcCompat="@drawable/ic_camera_plus" />
+                                <TextView app:textSize="@dimen/text_edit_text" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="@string/upload_photos_title" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView app:id="@+id/postad_summary_image_loading_spinner" app:background="0x106000b" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x7f0801b9" app:layout_height="UNKNOWN_DATA_0x7f0801b9" app:foreground="?unknown_attr_ref: 101030e">
+                            <ProgressBar app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:paddingLeft="16dp" app:paddingRight="16dp" app:layout_width="match_parent" app:layout_height="match_parent" app:indeterminate="true" style="@*style/Widget.ProgressBar" />
+                        </android.support.v7.widget.CardView>
+                        <LinearLayout app:orientation="horizontal" app:id="@+id/postad_summary_gallery_container" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent">
+                            <android.support.v7.widget.CardView app:id="@+id/postad_summary_image_capture_gallery" app:background="0x106000b" app:layout_width="UNKNOWN_DATA_0x7f0801b9" app:layout_height="UNKNOWN_DATA_0x7f0801b9" app:foreground="?unknown_attr_ref: 101030e">
+                                <ImageView app:paddingLeft="16dp" app:paddingRight="16dp" app:layout_width="match_parent" app:layout_height="match_parent" app:tint="?attr/colorPrimaryAction" app:srcCompat="@drawable/ic_camera_alt_white_24dp" />
+                            </android.support.v7.widget.CardView>
+                            <android.support.v7.widget.RecyclerView app:id="@+id/postad_summary_gallery" app:paddingLeft="@dimen/postad_thumb_divider" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0801b9" />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <android.support.v7.widget.CardView app:id="@+id/postad_summary_content" app:focusableInTouchMode="true" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginRight="16dp">
+                        <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:animateLayoutChanges="true">
+                            <com.gumtree.android.postad.views.EditTextSummaryValidationView app:id="@+id/postad_summary_title" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="4dp" app:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" app:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious" app:fieldTitle="@string/post_ad_text_title" />
+                            <com.gumtree.android.postad.views.TextSummaryValidationView app:id="@+id/postad_summary_category" app:layout_width="match_parent" app:layout_height="wrap_content" app:fieldTitle="@string/choose_category" />
+                            <com.gumtree.android.postad.views.EditTextSummaryValidationView app:id="@+id/postad_summary_price" app:layout_width="match_parent" app:layout_height="wrap_content" app:inputType="textCapWords|number|numberSigned|numberDecimal|numberPassword|phone" app:fieldTitle="@string/text_price_with_currency_in_brackets" />
+                            <com.gumtree.android.postad.views.PriceFrequencySummaryValidationView app:id="@+id/postad_summary_price_frequency" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:inputType="textCapWords|number|numberSigned|numberDecimal|numberPassword|phone" app:fieldTitle="@string/text_price_with_currency_in_brackets" />
+                            <com.gumtree.android.postad.views.TextSummaryValidationView app:id="@+id/postad_summary_attributes" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:fieldTitle="@string/key_facts_summary_title" />
+                            <com.gumtree.android.postad.views.EditTextSummaryValidationView app:id="@+id/postad_summary_description" app:layout_width="match_parent" app:layout_height="wrap_content" app:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" app:fieldTitle="@string/enter_description" />
+                            <com.gumtree.android.postad.views.TextSummaryValidationView app:id="@+id/postad_summary_contact" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/keyline" app:fieldTitle="@string/your_contact_details" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <LinearLayout app:orientation="vertical" app:id="@+id/postad_promote_container" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginRight="16dp">
+                        <ImageView app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="UNKNOWN_DATA_0x2401" app:layout_height="UNKNOWN_DATA_0x2401" app:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_chevron_down_white_24dp" />
+                        <android.support.v7.widget.CardView app:id="@+id/postad_feature_card" app:layout_width="match_parent" app:layout_height="wrap_content">
+                            <TextView app:textSize="16sp" app:textColor="@color/bark" app:id="@+id/postad_feature_button_text" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="20dp" app:layout_marginTop="16dp" app:layout_marginRight="20dp" app:layout_marginBottom="16dp" app:text="@string/post_ad_feature_button_use_feature_text" />
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout app:orientation="vertical" app:id="@+id/postad_scrollable_price_container" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content">
+                    <com.gumtree.android.postad.views.PriceInfoView app:id="@+id/postad_price_info2" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f080052" />
+                    <Button app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/postad_summary_post2" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0801b5" app:text="@string/postad_post_free" style="@style/Button_PrimaryAction_Unbounded" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.gumtree.android.postad.views.ScrollViewListenerScrollView>
+    </LinearLayout>
+    <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:id="@+id/postad_button_priceinfo_container" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <com.gumtree.android.postad.views.PriceInfoView app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/postad_price_info" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f080052" />
+        <Button app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/postad_summary_post" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0801b5" app:text="@string/postad_post_free" style="@style/Button_PrimaryAction_Unbounded" />
+    </LinearLayout>
+    <FrameLayout app:id="@+id/postad_summary_waiting" app:background="@color/dim_translucent" app:visibility="gone" app:clickable="true" app:layout_width="match_parent" app:layout_height="match_parent">
+        <ProgressBar app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:indeterminate="true" style="@*style/Widget.ProgressBar" />
+    </FrameLayout>
+</FrameLayout>

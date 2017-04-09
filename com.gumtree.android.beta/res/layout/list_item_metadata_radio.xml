@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="0x1020018" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RadioButton android:id="0x1020019" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="@string/text_yes" android:layout_weight="1.0" />
+    <RadioButton android:id="0x102001a" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/text_no" android:layout_weight="1.0" />
+</RadioGroup>

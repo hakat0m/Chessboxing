@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:paddingLeft="@dimen/keyline" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/customise_button" android:focusable="true" android:layout_width="UNKNOWN_DATA_0x6e01" android:layout_height="wrap_content" android:layout_marginRight="@dimen/keyline" android:layout_marginBottom="@dimen/keyline" android:text="@string/home_page_customise_button" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Button_PrimaryAction" />
+        <TextView android:textAppearance="@style/Text_Subhead" android:id="@+id/footer_home_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/latest_ads_hp" android:layout_toLeftOf="@+id/customise_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

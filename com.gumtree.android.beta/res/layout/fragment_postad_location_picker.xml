@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="wrap_content" app:layout_height="wrap_content">
+    <TextView app:textAppearance="@style/Text_SectionTitle" app:id="@+id/location_picker_header" app:paddingLeft="@dimen/keyline" app:paddingRight="@dimen/keyline" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/keyline_half" app:text="@string/location_picker_header" />
+    <TextView app:textAppearance="@style/Text_Body1" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/lookup_postcode_ext" app:background="?attr/selectableItemBackground" app:paddingLeft="@dimen/keyline" app:paddingRight="@dimen/keyline" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f01009e" app:layout_alignParentLeft="true" />
+    <View app:id="@+id/first_separator" app:background="?attr/dividerColor" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f010204" />
+    <RelativeLayout app:background="?attr/selectableItemBackground" app:paddingLeft="@dimen/keyline" app:paddingRight="@dimen/keyline" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f01009e">
+        <TextView app:textAppearance="@style/Text_Body1" app:id="@+id/location_picker" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentLeft="true" app:layout_centerVertical="true" />
+        <com.gumtree.android.common.views.TintImageView app:id="0x1020007" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_keyboard_arrow_right_white_24dp" app:scaleType="center" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:supportTintColor="?attr/colorIconAction" />
+    </RelativeLayout>
+</LinearLayout>

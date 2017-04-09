@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/header_action_bar" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" android:layout_alignParentTop="true" layout="@layout/header_action_bar" />
+    <RelativeLayout android:id="@+id/layout_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/header_action_bar">
+        <com.gumtree.android.common.views.StatefulPinnedGridView android:id="0x102000a" android:paddingTop="@dimen/keyline_quarter" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="0x106000d" android:drawSelectorOnTop="true" android:numColumns="UNKNOWN_DATA_0x7f09000b" android:choiceMode="singleChoice" />
+        <TextView android:id="0x1020004" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <include android:id="@+id/loading" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_loading" />
+        <ProgressBar android:id="@+id/endless_footer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminate="true" android:layout_alignParentBottom="true" style="@style/ProgressBar_Horizontal_Center" />
+    </RelativeLayout>
+    <View android:id="@+id/header_shadow" android:background="@drawable/grey_gradient_shadow_down" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x301" android:layout_below="@+id/header_action_bar" />
+    <TextView android:textAppearance="@style/Text_Subhead" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="0x1020015" android:paddingLeft="@dimen/keyline_2x" android:paddingRight="@dimen/keyline_2x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_empty_srp_simple" android:layout_centerInParent="true" android:lineSpacingExtra="3dp" android:fontFamily="sans-serif-light" />
+</RelativeLayout>

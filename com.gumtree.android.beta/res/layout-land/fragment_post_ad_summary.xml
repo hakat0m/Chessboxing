@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/post_ad_buttons">
+        <include android:id="@+id/post_ad_step_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/fragment_post_ad_one_mini" />
+        <View android:background="?attr/dividerColor" android:layout_width="UNKNOWN_DATA_0x7f010204" android:layout_height="match_parent" android:layout_marginTop="@dimen/keyline_half" android:layout_marginBottom="@dimen/keyline_half" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+            <include android:id="@+id/post_ad_step_2" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0" layout="@layout/fragment_post_ad_two_mini" />
+            <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f010205" android:layout_marginLeft="@dimen/keyline_half" android:layout_marginRight="@dimen/keyline_half" />
+            <include android:id="@+id/post_ad_step_3" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0" layout="@layout/fragment_post_ad_three_mini" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@+id/post_ad_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/post_ad_button_bar" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" cardView:paddingLeft="@dimen/apptentive_message_center_message_list_margin_side" cardView:paddingTop="4dp" cardView:paddingRight="@dimen/apptentive_message_center_message_list_margin_side" cardView:paddingBottom="8dp" cardView:layout_width="match_parent" cardView:layout_height="wrap_content" style="@style/Apptentive_MessageCenterMessageFrame">
+    <TextView cardView:textAppearance="@style/Apptentive_TextAppearance_Caption_Bold" cardView:id="@+id/datestamp" cardView:visibility="gone" cardView:layout_width="wrap_content" cardView:layout_height="wrap_content" style="@style/Apptentive_Style_TextView_Timestamp" />
+    <android.support.v7.widget.CardView cardView:layout_width="match_parent" cardView:layout_height="wrap_content" style="@style/Apptentive_Style_Widget_CardView_Message">
+        <LinearLayout cardView:id="@+id/apptentive_message_auto_frame" cardView:background="?attr/apptentiveAttenuateColor" cardView:paddingLeft="16dp" cardView:paddingTop="14dp" cardView:paddingRight="16dp" cardView:paddingBottom="14dp" cardView:layout_width="match_parent" cardView:layout_height="wrap_content">
+            <TextView cardView:autoLink="web|email|phone|map|all" cardView:id="@+id/apptentive_message_auto_body" cardView:paddingLeft="10dp" cardView:paddingTop="@dimen/apptentive_message_center_default_margin_small" cardView:paddingRight="10dp" cardView:paddingBottom="@dimen/apptentive_message_center_default_margin_small" cardView:layout_width="match_parent" cardView:layout_height="wrap_content" cardView:textIsSelectable="true" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

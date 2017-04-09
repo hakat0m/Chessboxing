@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.goyal.website2apk" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-1819727">
+	<uses-sdk android:minSdkVersion="11" android:targetSdkVersion="22" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<application android:theme="null" android:label="DaVinciCalibrator" android:icon="res/drawable/ic_launcher.png" android:allowBackup="true">
+		<activity android:label="DaVinciCalibrator" android:name="com.goyal.website2apk.MainActivity" android:configChanges="keyboardHidden" android:hardwareAccelerated="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+	</application>
+</manifest>

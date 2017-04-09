@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item android:icon="res/drawable-xhdpi-v4/ic_content_add_file.png" android:id="false" android:title="Add file" app:showAsAction="1" />
+	<item android:icon="res/drawable-xhdpi-v4/ic_content_add_pause.png" android:id="false" android:title="Add pause" app:showAsAction="1" />
+	<item android:icon="res/drawable-xhdpi-v4/ic_action_merge.png" android:id="false" android:title="Merge" app:showAsAction="1" />
+</menu>

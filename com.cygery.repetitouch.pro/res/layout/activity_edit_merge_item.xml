@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<TableLayout android:layout_width="-1" android:layout_height="-2">
+		<TableRow android:id="false" android:padding="5dp" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="5dp" android:text="Description" />
+			<EditText android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_span="3" android:hint="Description" android:layout_weight="{4:1065353216}" />
+		</TableRow>
+		<TableRow android:id="false" android:padding="5dp" android:visibility="0" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="File" />
+			<TextView android:layout_gravity="16" android:id="false" android:paddingLeft="10dp" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}" />
+			<Button android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:minHeight="0dp" android:text="Clear" style="?android:attr/buttonStyleSmall" />
+			<Button android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:minHeight="0dp" android:text="Select File" style="?android:attr/buttonStyleSmall" />
+		</TableRow>
+		<TableRow android:id="false" android:padding="5dp" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:paddingLeft="20dp" android:layout_width="-1" android:layout_height="-2" android:layout_span="4" android:layout_weight="{4:1065353216}" />
+		</TableRow>
+		<TableRow android:id="false" android:padding="5dp" android:visibility="2" android:layout_width="-1" android:layout_height="-2" />
+		<TableRow android:id="false" android:padding="5dp" android:visibility="0" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="5dp" android:text="Duration" />
+			<EditText android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_span="3" android:hint="hh:mm:ss.ms or ms" android:layout_weight="{4:1065353216}" />
+		</TableRow>
+		<TableRow android:id="false" android:padding="5dp" android:visibility="0" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="5dp" android:text="Loop count" />
+			<EditText android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_span="3" android:hint="Loop count" android:ems="10" android:layout_weight="{4:1065353216}" android:inputType="2" />
+		</TableRow>
+		<TableRow android:id="false" android:padding="5dp" android:visibility="0" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="5dp" android:text="Speed" />
+			<EditText android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_span="3" android:hint="Speed" android:ems="10" android:layout_weight="{4:1065353216}" android:inputType="8194" />
+		</TableRow>
+		<TableRow android:id="false" android:padding="5dp" android:visibility="0" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="5dp" android:text="Remove pauses" />
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_span="3" android:layout_weight="{4:1065353216}">
+				<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Start" android:layout_weight="{4:1065353216}" />
+				<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="End" android:layout_weight="{4:1065353216}" />
+			</LinearLayout>
+		</TableRow>
+	</TableLayout>
+</ScrollView>

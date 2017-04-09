@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fragment_post_ad_holder" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar" />
+    <FrameLayout android:id="@+id/post_ad_step_holder" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <fragment android:name="com.gumtree.android.post_ad.summary.PostAdSummaryFragment" android:id="@+id/fragment_summary" android:tag="0" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <ProgressBar android:id="@+id/progress_loader" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminate="true" android:layout_below="@+id/toolbar" android:layout_alignParentTop="true" style="@style/ProgressBar_Horizontal_Center" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.CardView app:id="@+id/content_location_entry" app:layout_width="match_parent" app:layout_height="wrap_content" app:cardCornerRadius="0dp">
+        <RelativeLayout app:padding="@dimen/keyline" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <TextView app:textAppearance="@style/Text_SectionTitle" app:id="@+id/postcode_lookup_header" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="@string/postcode_lookup_header" />
+            <FrameLayout app:id="@+id/layout_set_postcode" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/keyline_half" app:layout_below="@+id/postcode_lookup_header">
+                <EditText app:id="@+id/set_postcode" app:layout_width="match_parent" app:layout_height="wrap_content" app:hint="@string/text_location_hint" app:singleLine="true" app:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" app:imeOptions="actionNone|actionSearch|actionNext|actionPrevious" />
+                <com.gumtree.android.common.views.TintImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btn_clear_postcode" app:background="?attr/selectableItemBackgroundBorderless" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="@dimen/keyline" app:src="@drawable/ic_clear_white_24dp" app:supportTintColor="?attr/colorIconAction" />
+            </FrameLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <FrameLayout app:id="@+id/layout_content_suggestions" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/content_location_entry">
+        <com.gumtree.android.common.views.ExpandableHeightListView app:id="0x102000a" app:layout_width="match_parent" app:layout_height="match_parent" app:animateLayoutChanges="true" />
+        <TextView app:textAppearance="@style/Text_Body1" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="0x1020004" app:paddingTop="@dimen/keyline" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/message_postcode_invalid" />
+    </FrameLayout>
+    <Button app:id="@+id/btn_clear_recent" app:clickable="true" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="@dimen/keyline" app:text="@string/txt_clear_recent" app:layout_below="@+id/layout_content_suggestions" app:layout_alignParentRight="true" style="@style/Button" />
+    <ProgressBar app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/progress" app:layout_width="match_parent" app:layout_height="wrap_content" app:indeterminate="true" app:layout_alignParentTop="true" style="@style/ProgressBar_Horizontal_Center" />
+</RelativeLayout>

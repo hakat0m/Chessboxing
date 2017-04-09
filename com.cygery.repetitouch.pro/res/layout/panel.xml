@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="0" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+	<ImageButton android:id="false" android:background="0000" android:padding="0dp" android:layout_width="35dp" android:layout_height="35dp" android:src="res/drawable/bg_drag.xml" />
+	<ImageButton android:id="false" android:background="0000" android:padding="0dp" android:layout_width="35dp" android:layout_height="35dp" android:src="res/drawable/bg_menu.xml" />
+	<ImageButton android:id="false" android:background="0000" android:padding="0dp" android:layout_width="35dp" android:layout_height="35dp" android:src="res/drawable/bg_replay.xml" />
+	<ImageButton android:id="false" android:background="0000" android:padding="0dp" android:visibility="2" android:layout_width="35dp" android:layout_height="35dp" android:src="res/drawable/bg_stop.xml" />
+	<ImageButton android:id="false" android:background="0000" android:padding="0dp" android:layout_width="35dp" android:layout_height="35dp" android:src="res/drawable/bg_record.xml" />
+	<ImageButton android:id="false" android:background="0000" android:padding="0dp" android:visibility="2" android:layout_width="35dp" android:layout_height="35dp" android:src="res/drawable/bg_add_marker.xml" />
+</LinearLayout>

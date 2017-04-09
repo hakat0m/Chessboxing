@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/keyline_half" android:paddingTop="@dimen/keyline_half" android:paddingRight="@dimen/keyline" android:paddingBottom="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/post_ad_bubble_2" android:text="@string/text_2" android:layout_alignParentRight="true" style="@style/PostAdMainTickerText" />
+    <TextView android:id="@+id/post_ad_price" android:text="@string/text_capitalised_price" android:layout_toLeftOf="@+id/post_ad_bubble_2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/PostAdMainText" />
+    <TextView android:textAppearance="@style/Text_Subhead" android:ellipsize="end" android:id="@+id/post_ad_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_half" android:text="@string/text_capitalised_description" android:maxLines="3" android:minLines="2" android:layout_toLeftOf="@+id/post_ad_bubble_2" android:layout_below="@+id/post_ad_price" android:layout_alignParentLeft="true" />
+</RelativeLayout>

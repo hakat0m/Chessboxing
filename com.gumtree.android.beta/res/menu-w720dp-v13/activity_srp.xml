@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:icon="@drawable/ic_bell_plus_white_padding_24dp" app:id="@+id/menu_save_search_top" app:title="@string/menu_save_search" app:showAsAction="always|withText" />
+    <item app:icon="@drawable/ic_sort_white_24dp" app:id="@+id/menu_sort_top" app:title="@string/menu_sort" app:showAsAction="always|withText">
+        <menu>
+            <group app:id="@+id/menu_nav_group" app:checkableBehavior="single">
+                <item app:id="@+id/menu_sort_date_desc" app:title="@string/menu_date_desc" />
+                <item app:id="@+id/menu_sort_distance_asc" app:title="@string/menu_distance_asc" />
+                <item app:id="@+id/menu_sort_price_asc" app:title="@string/menu_price_asc" />
+                <item app:id="@+id/menu_sort_price_desc" app:title="@string/menu_price_desc" />
+            </group>
+        </menu> />
+    <item app:id="@+id/menu_filter_view" app:title="@string/add_menu" app:showAsAction="always" app:actionProviderClass="com.gumtree.android.common.views.ToggleTabActionProvider" />
+    <item app:icon="@drawable/ic_search_white_24dp" app:id="@+id/menu_refine" app:title="@string/menu_refine" app:showAsAction="always|withText" />
+</menu>

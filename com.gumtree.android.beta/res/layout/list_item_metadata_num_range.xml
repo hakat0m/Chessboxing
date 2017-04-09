@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@+id/min_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/min" android:layout_centerVertical="true" />
+        <com.gumtree.android.common.views.fields.NumField android:id="@+id/num_min" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/min_range" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@+id/max_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/max" android:layout_centerVertical="true" />
+        <com.gumtree.android.common.views.fields.NumField android:id="@+id/num_max" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/max_range" />
+    </RelativeLayout>
+</LinearLayout>

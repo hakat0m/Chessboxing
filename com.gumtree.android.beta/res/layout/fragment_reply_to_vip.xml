@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:id="@+id/title" android:padding="@dimen/keyline" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/Text_SectionTitle" android:id="@+id/reply_vip_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f010204" android:layout_marginTop="@dimen/keyline" android:layout_marginBottom="@dimen/keyline" android:layout_below="@+id/reply_vip_title" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@+id/title">
+        <LinearLayout android:orientation="vertical" android:id="@+id/reply_fields" android:paddingLeft="@dimen/keyline" android:paddingRight="@dimen/keyline" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="@dimen/keyline_half" android:paddingRight="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f010205" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/post_ad_previous" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="@string/text_summary" android:layout_weight="1.0" style="@style/Button_PrimaryAction" />
+        <Button android:id="@+id/post_ad_next" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="@string/text_next_btn" android:layout_weight="1.0" style="@style/Button_PrimaryAction" />
+    </LinearLayout>
+</LinearLayout>

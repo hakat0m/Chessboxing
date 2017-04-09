@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="0x106000b" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:orientation="vertical" app:clickable="true" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/keyline_content">
+        <RelativeLayout app:background="@color/bark" app:paddingLeft="@dimen/keyline_1_5x" app:paddingTop="@dimen/header_refine_drawer_padding_top" app:paddingBottom="@dimen/header_refine_drawer_padding_bottom" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f080121">
+            <TextView app:textAppearance="@style/Text_Title_Large_Inverse" app:id="@+id/refine_title" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/menu_search" />
+            <TextView app:textAppearance="@style/Text_Subhead_Secondary" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/text_refinements" app:layout_below="@+id/refine_title" />
+        </RelativeLayout>
+        <ListView app:scrollbarSize="6dp" app:scrollbarStyle="outsideOverlay" app:id="0x102000a" app:paddingTop="@dimen/keyline_1_5x" app:visibility="gone" app:clickable="false" app:clipToPadding="false" app:descendantFocusability="beforeDescendants" app:layout_width="match_parent" app:layout_height="match_parent" app:cacheColorHint="0x106000d" app:stretchMode="columnWidth" app:divider="0x106000d" app:contentDescription="@string/refine_list_content_description" />
+    </LinearLayout>
+    <android.support.v7.widget.CardView app:id="@+id/button_container" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentBottom="true" app:cardCornerRadius="0dp">
+        <Button app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/go_button" app:focusable="true" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline" app:layout_marginTop="@dimen/keyline" app:layout_marginRight="@dimen/keyline" app:layout_marginBottom="@dimen/keyline" app:text="@string/menu_done" app:layout_weight="1.0" style="@style/Button_PrimaryAction" />
+    </android.support.v7.widget.CardView>
+    <TextView app:id="0x1020004" app:layout_width="match_parent" app:layout_height="match_parent" />
+    <include app:id="@+id/loading" app:layout_width="match_parent" app:layout_height="match_parent" layout="@layout/layout_loading" />
+</RelativeLayout>

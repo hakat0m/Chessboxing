@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gumtree.android.common.views.BreadcrumbContainer xmlns:android="http://schemas.android.com/apk/res/android" android:scrollbarSize="4dp" android:scrollbarThumbHorizontal="@drawable/scrollbar_vertical_thumb" android:paddingRight="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.app.FragmentBreadCrumbs android:id="@+id/breadcrumbs" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.gumtree.android.common.views.BreadcrumbContainer>

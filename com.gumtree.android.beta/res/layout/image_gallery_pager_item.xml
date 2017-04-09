@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/item_image" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" android:contentDescription="@string/ebk_image_picker_gallery" />
+    <ImageView android:id="@+id/item_image_rotated" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" android:contentDescription="@string/ebk_image_picker_gallery" />
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/ebk_image_picker_gallery_item_frame_text_color" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/gallery_frame" android:background="@drawable/gallery_rectangle" android:paddingTop="@dimen/gutter_half" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/ebk_image_picker_gallery" />
+    <FrameLayout android:id="@+id/loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="UNKNOWN_DATA_0x7f080005" android:layout_height="UNKNOWN_DATA_0x7f080005" />
+    </FrameLayout>
+</FrameLayout>

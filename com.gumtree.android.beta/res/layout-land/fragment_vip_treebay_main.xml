@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout app:id="@+id/main_content" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout app:theme="@style/ThemeOverlay_AppCompat_Dark_ActionBar" app:id="@+id/appbar" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <android.support.design.widget.CollapsingToolbarLayout app:id="@+id/collapsing_toolbar" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_scrollFlags="3" app:contentScrim="?attr/colorPrimary">
+                <android.support.v7.widget.Toolbar app:id="@+id/frag_toolbar" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f01006d" app:layout_collapseMode="1">
+                    <TextView app:textAppearance="@style/TextAppearance_AppCompat_Widget_ActionBar_Title" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/toolbar_title" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="wrap_content" app:singleLine="true" />
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.widget.NestedScrollView app:id="@+id/scroll" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout app:orientation="vertical" app:id="@+id/scrollContent" app:background="?attr/backgroundColorSecondary" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <FrameLayout app:id="@+id/fragment_layout_pager_holder" app:fitsSystemWindows="true" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_collapseMode="2" />
+                <FrameLayout app:id="@+id/fragment_vip_title_holder" app:fitsSystemWindows="true" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <FrameLayout app:id="@+id/fragment_vip_price_holder" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <FrameLayout app:id="@+id/fragment_vip_attr_holder" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <FrameLayout app:id="@+id/fragment_vip_details_holder" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <FrameLayout app:id="@+id/fragment_vip_car_check_holder" app:paddingLeft="10dp" app:paddingRight="10dp" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <FrameLayout app:id="@+id/fragment_vip_mpu_holder" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f080004" app:layout_marginLeft="@dimen/mpu_margin" app:layout_marginTop="18dp" app:layout_marginRight="@dimen/mpu_margin" />
+                <FrameLayout app:id="@+id/fragment_vip_textlink_holder" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="20dp" app:layout_marginBottom="@dimen/vip_contact_menu_height" app:minHeight="70dp" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+    <FrameLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/fragment_vip_contact_holder" app:background="?attr/backgroundColorPrimary" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <View app:background="@drawable/grey_gradient_shadow_up" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f010205" />
+            <View app:background="?attr/dividerColor" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f010204" />
+            <include app:id="@+id/fragment_vip_buy" layout="@layout/layout_image_button_ebay" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout app:id="@+id/postad_summary_waiting" app:background="@color/dim_translucent" app:visibility="gone" app:clickable="true" app:layout_width="match_parent" app:layout_height="match_parent">
+        <ProgressBar app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:indeterminate="true" style="@*style/Widget.ProgressBar" />
+    </FrameLayout>
+</FrameLayout>

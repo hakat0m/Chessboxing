@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res-auto">
+    <FrameLayout app:paddingLeft="@dimen/keyline" app:paddingTop="@dimen/postad_field_padding_top" app:paddingRight="@dimen/keyline" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout app:id="@+id/text_input_layout" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="-38dp" app:errorEnabled="true">
+            <android.support.v7.widget.AppCompatEditText app:id="@+id/edit_text" app:paddingTop="@dimen/postad_edittext_inner_padding_top" app:paddingRight="@dimen/postad_summary_field_padding_right" app:paddingBottom="@dimen/postad_edittext_padding_bottom" app:layout_width="match_parent" app:layout_height="wrap_content" app:lines="1" app:maxLength="100" app:inputType="number|numberSigned|numberDecimal|numberPassword|phone" app:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious" style="@style/EditText" />
+        </android.support.design.widget.TextInputLayout>
+    </FrameLayout>
+    <TextView app:textSize="@dimen/text_edit_text_small" app:textColor="?attr/colorError" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/error_message" app:paddingLeft="@dimen/postad_edittext_inner_padding" app:paddingTop="@dimen/keyline_quarter" app:paddingRight="@dimen/postad_edittext_inner_padding" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline" app:layout_marginRight="@dimen/keyline" app:includeFontPadding="false" app:transformPivotY="0dp" />
+</merge>

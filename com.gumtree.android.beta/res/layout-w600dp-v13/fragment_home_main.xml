@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fragment_home_pager" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/keyline_half" android:paddingTop="@dimen/keyline_half" android:paddingRight="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/category1" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <FrameLayout android:id="@+id/category2" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <FrameLayout android:id="@+id/category3" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <FrameLayout android:id="@+id/category4" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/keyline_half" android:paddingRight="@dimen/keyline_half" android:paddingBottom="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/category5" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <FrameLayout android:id="@+id/category6" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <FrameLayout android:id="@+id/category7" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <FrameLayout android:id="@+id/category8" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

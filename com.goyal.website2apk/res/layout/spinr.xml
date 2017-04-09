@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1" android:interpolator="resourceId:0x10a000b" android:drawable="res/drawable/wheel.png" android:toDegrees="{4:1152647168}" android:pivotX="1.5046333E-36%" android:pivotY="1.5046333E-36%" android:repeatCount="-1" />

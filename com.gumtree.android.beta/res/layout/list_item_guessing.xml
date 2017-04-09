@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <android.support.v7.widget.CardView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/keyline_quarter" app:layout_marginBottom="@dimen/keyline_quarter" app:foreground="?attr/selectableItemBackground" app:cardCornerRadius="0dp">
+        <TextView app:textAppearance="@style/Text_Body1" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="0x1020014" app:paddingLeft="@dimen/keyline" app:paddingRight="@dimen/keyline" app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="?attr/listPreferredItemHeight" />
+    </android.support.v7.widget.CardView>
+</FrameLayout>

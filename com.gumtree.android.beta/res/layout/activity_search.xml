@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/view_root" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar app:theme="@style/ThemeOverlay_AppCompat_Dark_ActionBar" app:id="@+id/toolbar" app:background="?attr/colorPrimary" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f01006d" app:contentInsetStartWithNavigation="0dp" app:popupTheme="@style/ThemeOverlay_AppCompat_Light">
+        <com.gumtree.android.ad.search.results.ToolbarSearchView app:id="@+id/toolbar_search" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+</FrameLayout>

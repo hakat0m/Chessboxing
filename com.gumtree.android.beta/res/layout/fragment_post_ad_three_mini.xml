@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/keyline_half" android:paddingTop="@dimen/keyline_half" android:paddingRight="@dimen/keyline" android:paddingBottom="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/post_ad_bubble_3" android:text="@string/text_3" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/PostAdMainTickerText" />
+    <TextView android:id="@+id/post_ad_email" android:text="@string/text_capitalised_email" android:layout_toLeftOf="@+id/post_ad_bubble_3" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/PostAdMainText" />
+    <TextView android:id="@+id/post_ad_telephone" android:text="@string/text_capitalised_telephone" android:layout_toLeftOf="@+id/post_ad_bubble_3" android:layout_below="@+id/post_ad_email" android:layout_alignParentLeft="true" style="@style/PostAdMainText" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?unknown_attr_ref: 101030e" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f080131">
+    <RelativeLayout android:background="@color/bark_10_translucent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textAppearance="@style/Text_Body2" android:ellipsize="end" android:id="@+id/list_item_bing_ad_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline" android:layout_marginTop="@dimen/keyline_half" android:layout_marginRight="@dimen/keyline" android:maxLines="1" />
+        <TextView android:textAppearance="@style/Text_Caption" android:ellipsize="end" android:id="@+id/list_item_bing_ad_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline" android:layout_marginTop="2dp" android:layout_marginRight="@dimen/keyline" android:lines="2" android:layout_below="@+id/list_item_bing_ad_title" />
+        <TextView android:textAppearance="@style/Text_Url" android:ellipsize="end" android:id="@+id/list_item_bing_ad_web" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline" android:layout_marginTop="2dp" android:layout_marginRight="@dimen/keyline" android:maxLines="1" android:layout_below="@+id/list_item_bing_ad_description" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="@dimen/keyline" android:paddingBottom="@dimen/keyline" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.gumtree.android.common.views.fields.StringField android:id="@+id/post_ad_one_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.gumtree.android.common.views.fields.ButtonField android:id="@+id/post_ad_one_location" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.gumtree.android.common.views.fields.ButtonField android:id="@+id/post_ad_one_cat" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="0x102000a" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true" /> />
+</ScrollView>

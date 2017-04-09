@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:paddingLeft="@dimen/keyline_1_5x" app:paddingTop="@dimen/keyline_half" app:paddingRight="@dimen/keyline_1_5x" app:paddingBottom="@dimen/keyline_five_quarters" app:clickable="true" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <ImageView app:id="@+id/manage_ads_item_edit" app:padding="2dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="@dimen/keyline_content_minus_keyline" app:tint="@color/bark_60" app:srcCompat="@drawable/ic_mode_edit_black_24dp" style="@style/ImageView_SelectableBackground" />
+    <ImageView app:id="@+id/manage_ads_item_delete" app:padding="2dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline_content" app:tint="@color/bark_60" app:srcCompat="@drawable/ic_delete_white_24dp" style="@style/ImageView_SelectableBackground" />
+    <TextView app:textAppearance="@style/Text_Button" app:textColor="@color/berry" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/manage_ads_item_action" app:background="?unknown_attr_ref: 101030e" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+</FrameLayout>

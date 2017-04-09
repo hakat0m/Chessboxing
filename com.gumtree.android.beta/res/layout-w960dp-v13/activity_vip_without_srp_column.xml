@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/vip_main" android:background="?attr/backgroundColorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/vip_fragment_container" android:background="@drawable/background_left_right_shadow" android:paddingLeft="1px" android:paddingRight="1px" android:layout_width="UNKNOWN_DATA_0x7f080045" android:layout_height="match_parent" android:layout_centerInParent="true" />
+</RelativeLayout>

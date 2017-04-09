@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <xml name="authenticator">res/xml/authenticator.xml</xml>
+    <xml name="searchable">res/xml/searchable.xml</xml>
+    <xml name="searchable_ad_keyword">res/xml/searchable_ad_keyword.xml</xml>
+    <xml name="settings">res/xml/settings.xml</xml>
+    <xml name="syncadapter">res/xml/syncadapter.xml</xml>
+</resources>

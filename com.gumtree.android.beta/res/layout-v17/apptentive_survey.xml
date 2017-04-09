@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/apptentiveViewBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.apptentive.android.sdk.view.ApptentiveNestedScrollView android:id="@+id/survey_scrollview" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:theme="?attr/apptentiveToolbarTheme" android:background="?attr/colorPrimary" android:paddingLeft="@dimen/apptentive_interaction_extended_toolbar_margin_start" android:paddingRight="@dimen/apptentive_interaction_extended_toolbar_margin_end" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/apptentive_interaction_extended_toolbar_margin_start" android:paddingEnd="@dimen/apptentive_interaction_extended_toolbar_margin_end">
+                <LinearLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="UNKNOWN_DATA_0x7f080028" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="@style/Apptentive_TextAppearance_Subhead" android:autoLink="web|email|phone|map|all" android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="436dp" android:alpha="0.8" />
+                    <ImageButton android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/info" android:layout_width="UNKNOWN_DATA_0x7f0800b3" android:layout_height="UNKNOWN_DATA_0x7f0800b3" android:layout_marginBottom="2dp" style="@style/Apptentive_Style_Widget_ImageButton_Info" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/questions" android:layout_width="UNKNOWN_DATA_0x7f080033" android:layout_height="match_parent" />
+            <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:background="?attr/apptentiveAttenuateColor" android:paddingTop="16dp" android:paddingBottom="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                <Button android:id="@+id/send" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x3801" android:layout_margin="8dp" android:text="@string/apptentive_survey_send_response" style="@style/Apptentive_Style_Widget_Button_Colored" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.apptentive.android.sdk.view.ApptentiveNestedScrollView>
+</LinearLayout>

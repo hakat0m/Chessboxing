@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<TableLayout android:layout_width="-1" android:layout_height="-2">
+		<TableRow android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:textSize="20sp" android:textColor="ffff4444" android:gravity="17" android:layout_gravity="16" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_span="4" android:text="WARNING: Support for automation tools is currently disabled. You can enable it in RepetiTouch&apos;s settings." android:layout_weight="{4:1065353216}" />
+		</TableRow>
+		<TableRow android:id="false" android:padding="5dp" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="5dp" android:text="Action" />
+			<Spinner android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_span="3" android:layout_weight="{4:1065353216}" />
+		</TableRow>
+		<TableRow android:id="false" android:padding="5dp" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="5dp" />
+			<TextView android:layout_gravity="16" android:id="false" android:paddingLeft="10dp" android:layout_width="-1" android:layout_height="-2" android:layout_weight="{4:1065353216}" />
+			<Button android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:minHeight="0dp" android:text="Clear" style="?android:attr/buttonStyleSmall" />
+			<Button android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:minHeight="0dp" android:text="Select File" style="?android:attr/buttonStyleSmall" />
+		</TableRow>
+		<TableRow android:id="false" android:padding="5dp" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:paddingLeft="20dp" android:layout_width="-1" android:layout_height="-2" android:layout_span="4" android:layout_weight="{4:1065353216}" />
+		</TableRow>
+		<TableRow android:id="false" android:padding="5dp" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="5dp" android:text="Hide panel" />
+			<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_span="3" android:text="" android:layout_weight="{4:1065353216}" />
+		</TableRow>
+		<TableRow android:id="false" android:padding="5dp" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="5dp" android:text="Loop count
+(-1 for infinitely)" />
+			<EditText android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_span="3" android:ems="10" android:layout_weight="{4:1065353216}" android:inputType="4098" />
+		</TableRow>
+		<TableRow android:id="false" android:padding="5dp" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="5dp" android:text="Speed" />
+			<EditText android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_span="3" android:hint="(leave blank for default)" android:ems="10" android:layout_weight="{4:1065353216}" android:inputType="2" />
+		</TableRow>
+		<TableRow android:id="false" android:padding="5dp" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="5dp" android:text="Appending record" />
+			<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_span="3" android:text="" android:layout_weight="{4:1065353216}" />
+		</TableRow>
+		<TableRow android:id="false" android:padding="5dp" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="5dp" android:text="Close after action" />
+			<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_span="3" android:text="" android:layout_weight="{4:1065353216}" />
+		</TableRow>
+		<TableRow android:id="false" android:padding="5dp" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="5dp" android:text="Silent mode" />
+			<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_span="3" android:text="" android:layout_weight="{4:1065353216}" />
+		</TableRow>
+		<TableRow android:id="false" android:layout_width="-1" android:layout_height="-2">
+			<View android:layout_height="0dp" />
+			<View android:layout_height="0dp" />
+			<View android:layout_height="0dp" />
+			<View android:layout_height="0dp" />
+		</TableRow>
+	</TableLayout>
+</ScrollView>

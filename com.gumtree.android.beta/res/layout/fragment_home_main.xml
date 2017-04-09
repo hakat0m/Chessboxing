@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/fragment_home_pager" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/home_post_ad_button" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="48dp" android:layout_marginTop="@dimen/keyline" android:layout_marginRight="48dp" android:layout_marginBottom="@dimen/keyline" android:text="@string/text_btn_post_ad" style="@style/Button_PrimaryAction" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <Space android:layout_width="UNKNOWN_DATA_0x7f080047" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@+id/category1" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Space android:layout_width="UNKNOWN_DATA_0x7f080047" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@+id/category2" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Space android:layout_width="UNKNOWN_DATA_0x7f080047" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Space android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f08004e" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <Space android:layout_width="UNKNOWN_DATA_0x7f080047" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@+id/category3" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Space android:layout_width="UNKNOWN_DATA_0x7f080047" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@+id/category4" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Space android:layout_width="UNKNOWN_DATA_0x7f080047" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Space android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f08004e" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <Space android:layout_width="UNKNOWN_DATA_0x7f080047" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@+id/category5" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Space android:layout_width="UNKNOWN_DATA_0x7f080047" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@+id/category6" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Space android:layout_width="UNKNOWN_DATA_0x7f080047" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Space android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f08004e" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <Space android:layout_width="UNKNOWN_DATA_0x7f080047" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@+id/category7" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Space android:layout_width="UNKNOWN_DATA_0x7f080047" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@+id/category8" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Space android:layout_width="UNKNOWN_DATA_0x7f080047" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Space android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f08004e" />
+</LinearLayout>

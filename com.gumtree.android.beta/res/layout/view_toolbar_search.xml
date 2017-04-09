@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@drawable/toolbar_search_background" app:clickable="true" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginTop="8dp" app:layout_marginBottom="8dp">
+    <ImageView app:id="@+id/toolbar_search_icon" app:padding="8dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:tint="@color/bark_50pct_white_opacity" app:layout_alignParentLeft="true" app:layout_centerVertical="true" app:srcCompat="@drawable/ic_magnify_white_24dp" />
+    <TextView app:textColor="@color/white" app:textColorHint="@color/bark_50pct_white_opacity" app:id="@+id/toolbar_search_text" app:layout_width="match_parent" app:layout_height="wrap_content" app:hint="@string/toolbar_search_hint" app:layout_toRightOf="@+id/toolbar_search_icon" app:layout_centerVertical="true" />
+</RelativeLayout>

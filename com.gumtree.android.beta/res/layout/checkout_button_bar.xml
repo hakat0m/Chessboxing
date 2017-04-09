@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/background_left_right_shadow" android:paddingLeft="@dimen/keyline" android:paddingRight="@dimen/keyline" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f010204" />
+    <FrameLayout android:orientation="vertical" android:paddingTop="@dimen/keyline_half" android:paddingBottom="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/checkout" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/text_post" style="@style/Button_PrimaryAction" />
+    </FrameLayout>
+</LinearLayout>

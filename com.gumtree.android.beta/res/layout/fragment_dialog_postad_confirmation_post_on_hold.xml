@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_centerVertical="true">
+    <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:background="?attr/backgroundColorTertiary" app:paddingLeft="@dimen/keyline" app:paddingTop="@dimen/keyline_2x" app:paddingRight="@dimen/keyline" app:paddingBottom="@dimen/keyline_2x" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline" app:layout_marginRight="@dimen/keyline" app:layout_centerHorizontal="true" app:layout_centerVertical="true">
+        <RelativeLayout app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="UNKNOWN_DATA_0x7f0801aa" app:layout_height="UNKNOWN_DATA_0x7f0801aa" app:layout_marginRight="@dimen/postad_edittext_inner_padding">
+            <com.gumtree.android.common.views.TintImageView app:id="@+id/check_background" app:background="@drawable/circular_check_background" app:layout_width="match_parent" app:layout_height="match_parent" app:supportTintColor="@color/green" />
+            <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/check" app:padding="4dp" app:layout_width="match_parent" app:layout_height="match_parent" app:src="@drawable/ic_done_white_24dp" app:contentDescription="@string/content_desc_postad_check" />
+            <ImageView app:id="@+id/waiting" app:layout_width="UNKNOWN_DATA_0x1e01" app:layout_height="UNKNOWN_DATA_0x1e01" app:layout_alignParentRight="true" app:layout_alignParentBottom="true" app:contentDescription="@string/content_desc_postad_check" app:srcCompat="@drawable/ic_waiting" />
+        </RelativeLayout>
+        <TextView app:id="@+id/confirmation_post_on_hold_title" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/post_ad_confirmation_post_on_hold_title" style="@style/PostAd_ConfirmationText" />
+        <TextView app:id="@+id/confirmation_post_on_hold_subtitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="@string/post_ad_confirmation_post_on_hold_subtitle" style="@style/PostAd_ConfirmationText_Text2" />
+        <RelativeLayout app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/keyline_2x">
+            <TextView app:id="@+id/confirmation_post_on_hold_button_close" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/post_ad_confirmation_close" app:layout_alignParentLeft="true" app:layout_centerVertical="true" style="@style/PostAdConfirmationButtonNoBackground" />
+            <Button app:id="@+id/confirmation_post_on_hold_button_post_ad" app:padding="@dimen/keyline" app:clickable="true" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/post_ad_confirmation_success_post_ad" app:layout_alignParentRight="true" style="@style/Button_PrimaryAction_NoHeight" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

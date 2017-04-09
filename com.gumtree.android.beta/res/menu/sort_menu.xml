@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_nav_group" android:checkableBehavior="single">
+        <item android:id="@+id/menu_sort_date_desc" android:title="@string/menu_date_desc" />
+        <item android:id="@+id/menu_sort_distance_asc" android:title="@string/menu_distance_asc" />
+        <item android:id="@+id/menu_sort_price_asc" android:title="@string/menu_price_asc" />
+        <item android:id="@+id/menu_sort_price_desc" android:title="@string/menu_price_desc" />
+    </group>
+</menu>

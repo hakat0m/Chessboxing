@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/vip_car_history" android:padding="@dimen/keyline" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:ellipsize="end" android:id="@+id/car_history_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_half" android:layout_marginRight="@dimen/keyline_half" android:layout_marginBottom="@dimen/keyline_half" android:text="@string/label_check_this_car_history" android:singleLine="true" style="@style/Button_SecondaryAction" />
+</FrameLayout>

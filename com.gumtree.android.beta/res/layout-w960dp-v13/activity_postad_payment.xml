@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/backgroundColorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar" />
+    <FrameLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:background="?attr/backgroundColorSecondary" android:paddingLeft="1px" android:paddingRight="1px" android:layout_width="UNKNOWN_DATA_0x7f080045" android:layout_height="match_parent">
+        <WebView android:id="@+id/postad_payment_web" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@+id/postad_payment_loading" android:background="?attr/backgroundColorSecondary" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/ProgressBar_Horizontal_Center" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

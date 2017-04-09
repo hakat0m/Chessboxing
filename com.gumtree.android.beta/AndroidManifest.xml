@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="312" android:versionName="3.2.7 Beta" package="com.gumtree.android.beta" platformBuildVersionCode="24" platformBuildVersionName="7.0">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="24" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="com.gumtree.android.beta.permission.C2D_MESSAGE" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-permission android:name="com.gumtree.android.beta.permission.C2D_MESSAGE" />
+    <uses-feature android:glEsVersion="20000" android:required="true" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false" />
+    <uses-feature android:name="android.hardware.camera2" android:required="false" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false" />
+    <application android:theme="@style/Theme_Gumtree" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="com.gumtree.android.GumtreeApplication" android:allowBackup="false" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="false" android:fullBackupContent="false" android:resizeableActivity="false" android:supportsPictureInPicture="false">
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements" />
+        <meta-data android:name="com.ebay.frlib.ApplicationName" android:value="@string/app_frlib_app_name" />
+        <meta-data android:name="com.ebay.frlib.ApplicationVersion" android:value="1.2" />
+        <meta-data android:name="com.ebay.frlib.mdns.UseProductionServers" android:value="true" />
+        <meta-data android:name="apptentive_log_level" android:value="WARN" />
+        <meta-data android:name="com.gumtree.android.configuration.GumtreeGlideModule" android:value="GlideModule" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_maps" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id" />
+        <provider android:label="Sync User Data" android:name="com.gumtree.android.common.providers.AppProvider" android:exported="false" android:authorities="com.gumtree.android.beta" android:syncable="true" android:logo="@drawable/ic_launcher" />
+        <provider android:name="com.gumtree.android.common.providers.GumtreeSuggestionsProvider" android:exported="false" android:authorities="com.gumtree.android.beta.suggestions" android:syncable="false" />
+        <service android:name="com.gumtree.android.auth.SyncService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter" />
+        </service>
+        <activity android:theme="@style/Theme_Gumtree_StatusBarTranslucent" android:label="@string/app_name" android:name="com.gumtree.android.splash.SplashActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_StatusBarTranslucent" android:label="@string/app_name" android:name="com.gumtree.android.home.HomeActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.app.default_searchable" android:value=".srp.SRPActivity" />
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_StatusBarTranslucent" android:name="com.gumtree.android.srp.SRPActivity" android:launchMode="singleTop" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.gumtree.ads" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.home.HomeActivity" />
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name="com.gumtree.android.ad.search.results.SearchResultsActivity" android:launchMode="singleTop" />
+        <activity android:name="com.gumtree.android.ad.search.keyword.SearchKeywordActivity" android:launchMode="singleTop" android:parentActivityName="com.gumtree.android.home.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.home.HomeActivity" />
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable_ad_keyword" />
+        </activity>
+        <activity android:name="com.gumtree.android.ad.search.refine.RefineSearchActivity" android:launchMode="singleTop" android:parentActivityName="com.gumtree.android.ad.search.keyword.SearchKeywordActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ad.search.keyword.SearchKeywordActivity" />
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/title_ad" android:name="com.gumtree.android.vip.VIPActivity" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.gumtree.ads" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.home.HomeActivity" />
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/title_ad" android:name="com.gumtree.android.vip_treebay.VIPActivityTreebay" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.home.HomeActivity" />
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/title_categories" android:name="com.gumtree.android.categories.CategoryActivity" android:exported="false" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <action android:name="com.gumtree.android.intent.ACTION_PICK_FOR_POST" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.gumtree.categories" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <action android:name="com.gumtree.android.intent.ACTION_PICK_FOR_POST" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.gumtree.categories" />
+            </intent-filter>
+            <meta-data android:name="android.app.default_searchable" android:value=".srp.SRPActivity" />
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.home.HomeActivity" />
+        </activity>
+        <activity android:name="com.gumtree.android.locations.LocationActivity" android:exported="false" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <action android:name="com.gumtree.android.intent.ACTION_PICK_FOR_POST" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.gumtree.locations" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.locations.SetLocationActivity" />
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/nav_location" android:name="com.gumtree.android.locations.SetLocationActivity" android:exported="false" android:launchMode="singleTop" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustPan|adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <action android:name="com.gumtree.android.intent.ACTION_PICK_FOR_POST" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.gumtree.locations" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_StatusBarTranslucent" android:label="@string/nav_messages" android:name="com.gumtree.android.message_box.InboxActivity" android:parentActivityName="com.gumtree.android.home.HomeActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.home.HomeActivity" />
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/conversation" android:name="com.gumtree.android.message_box.conversation.ConversationActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" android:parentActivityName="com.gumtree.android.message_box.InboxActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.message_box.InboxActivity" />
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_StatusBarTranslucent" android:label="@string/nav_fav" android:name="com.gumtree.android.favourites.FavouritesActivity" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.gumtree.favourites" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.home.HomeActivity" />
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_StatusBarTranslucent" android:label="@string/nav_saved_searches" android:name="com.gumtree.android.savedsearches.SavedSearchesActivity" android:launchMode="singleTop" android:parentActivityName="com.gumtree.android.home.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.gumtree.savedsearches" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.home.HomeActivity" />
+        </activity>
+        <activity android:label="@string/title_car_history_check" android:name="com.gumtree.android.vip.carcheck.CarCheckLandingActivity" android:launchMode="singleTop" />
+        <activity android:label="@string/activity_help" android:name="com.gumtree.android.help.HelpActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.home.HomeActivity" />
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_Gallery" android:name="com.gumtree.android.vip.VIPGalleryActivity" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="com.gumtree.android.intent.ACTION_VIEW_GALLERY" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.gumtree.ads" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_Gallery" android:name="com.gumtree.android.vip_treebay.VIPGalleryActivityTreebay" android:launchMode="singleTop" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/texT_email" android:name="com.gumtree.android.vip.reply.ReplyToVIPActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.gumtree.ads" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/action_bar_report_ad" android:name="com.gumtree.android.report.ad.ReportAdActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.vip.VIPActivity" />
+        </activity>
+        <activity android:label="@string/title_features" android:name="com.gumtree.android.post_ad.feature.PostAdPaymentActivity" android:launchMode="singleTop">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.home.HomeActivity" />
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_StatusBarTranslucent" android:label="@string/nav_manage_ad" android:name="com.gumtree.android.managead.ManageAdActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.gumtree.ads" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" android:host="my.gumtree.com" android:pathPrefix="/manage/ads" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_telecapture" android:name="com.gumtree.android.managead.TelecaptureActivity" android:launchMode="singleTop" />
+        <activity android:theme="@style/Theme_Gumtree_Settings" android:label="@string/title_settings" android:name="com.gumtree.android.settings.SettingsActivity" android:launchMode="singleTask" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/crop" android:name="com.gumtree.android.post_ad.gallery.crop.CropImageActivity" android:hardwareAccelerated="false" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/text_login" android:name="com.gumtree.android.auth.AuthenticatorActivity" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="orientation" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.home.HomeActivity" />
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/title_ad" android:name="com.gumtree.android.vip.VIPNFCActivity" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible">
+            <intent-filter>
+                <action android:name="com.gumtree.android.intent.ACTION_VIEW_WITH_BEAM" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.gumtree.ads" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.gumtree.ads.beam" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.home.HomeActivity" />
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/title_categories_suggestion" android:name="com.gumtree.android.categories.PostAdCategoryActivity" android:exported="false" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/title_postcode_lookup" android:name="com.gumtree.android.locations.postad.PostAdLocationActivity" android:exported="false" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/title_postcode_lookup" android:name="com.gumtree.android.locations.postad.PostcodeFinderWebView" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/nav_post_ad" android:name="com.gumtree.android.post_ad.summary.PostAdSummaryActivity" android:launchMode="singleTop" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/nav_post_ad" android:name="com.gumtree.android.postad.PostAdActivity" android:launchMode="singleTop" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/nav_post_ad_category" android:name="com.gumtree.android.category.NewPostAdCategoryActivity" android:launchMode="singleTop" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/your_contact_details" android:name="com.gumtree.android.postad.contactdetails.PostAdContactDetailsActivity" android:launchMode="singleTop" />
+        <activity android:theme="@style/Theme_Gumtree_Transparent" android:name="com.gumtree.android.postad.confirmation.PostAdConfirmationScreenActivity" android:launchMode="singleTop" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/key_facts_screen_title" android:name="com.gumtree.android.postad.customdetails.CustomDetailsActivity" android:launchMode="singleTop" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/text_enter_your_postcode" android:name="com.gumtree.android.location.LocationActivity" android:launchMode="singleTop" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:name="com.gumtree.android.category.ManualCategorySelectionActivity" android:launchMode="singleTop" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/title_checkout" android:name="com.gumtree.android.postad.payment.PostAdPaymentActivity" android:launchMode="singleTop" />
+        <activity android:label="@string/images" android:name="com.gumtree.android.post_ad.gallery.GalleryActivity" android:launchMode="singleTop" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:name="com.gumtree.android.post_ad.steps.PostAdStepsActivity" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.gumtree.ads" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.post_ad.summary.PostAdSummaryActivity" />
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/title_checkout" android:name="com.gumtree.android.post_ad.payment.PostAdPaypalActivity" android:launchMode="singleTop" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/text_preview" android:name="com.gumtree.android.post_ad.preview.PreviewActivity" />
+        <activity android:theme="@style/Theme_Gumtree_Gallery" android:label="@string/text_preview" android:name="com.gumtree.android.post_ad.preview.PreviewGalleryActivity" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name="com.facebook.LoginActivity" />
+        <activity android:label="@string/app_name" android:name="com.gumtree.android.deeplinking.DeepLinkingActivity">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="gumtree" android:host="link" />
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="my.gumtree.com" />
+                <data android:pathPrefix="/activate-user" />
+                <data android:pathPrefix="/reset-password" />
+                <data android:pathPrefix="/postad" />
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/nav_promotion" android:name="com.gumtree.android.postad.promote.PromotionActivity" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/title_promote" android:name="com.gumtree.android.postad.promote.PromotionInfoActivity" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:name="com.gumtree.android.login.AuthActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" android:parentActivityName="com.gumtree.android.home.HomeActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.home.HomeActivity" />
+        </activity>
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/reset_password" android:name="com.gumtree.android.login.forgotpassword.ForgotPasswordActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:theme="@style/Theme_Gumtree_NoCard" android:label="@string/create_new_password" android:name="com.gumtree.android.login.resetpassword.ResetPasswordActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" android:parentActivityName="com.gumtree.android.home.HomeActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.home.HomeActivity" />
+        </activity>
+        <activity android:name="com.gumtree.android.sellersotheritems.SellersOtherItemsActivity" android:launchMode="singleTop">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.gumtree.android.vip.VIPActivity" />
+        </activity>
+        <activity android:label="@string/nav_manage_ad" android:name="com.gumtree.android.manageads.ManageAdsActivity" android:launchMode="singleTop" />
+        <service android:name="com.gumtree.android.common.http.CAPIHttpIntentService" android:enabled="true" />
+        <service android:name="com.gumtree.android.startup.StartupService" android:enabled="true" />
+        <service android:name="com.gumtree.android.common.cleanup.CleanupIntentService" />
+        <service android:name="com.gumtree.android.login.AccountAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator" />
+        </service>
+        <service android:name="com.gumtree.android.post_ad.gallery.upload.PostUploadService" android:enabled="true" />
+        <service android:name="com.gumtree.android.favourites.FavouritesSyncIntentService" />
+        <service android:name="com.gumtree.android.favourites.FavouriteCapiIntentService" />
+        <service android:name="com.gumtree.android.favourites.FavouriteIntentService" />
+        <service android:name="com.gumtree.android.savedsearches.SavedSearchesIntentService" />
+        <service android:name="com.gumtree.android.savedsearches.SavedSearchesPostIntentService" />
+        <service android:name="com.gumtree.android.managead.DeleteAdIntentService" />
+        <service android:name="com.gumtree.android.post_ad.PostAdDBIntentService" />
+        <service android:name="com.gumtree.android.post_ad.PostAdAPIIntentService" />
+        <service android:name="com.gumtree.android.post_ad.FeaturesIntentService" />
+        <service android:name="com.gumtree.android.post_ad.MetadataIntentService" />
+        <service android:name="com.gumtree.android.post_ad.feature.service.SubmitOrderIntentService" />
+        <service android:name="com.gumtree.android.post_ad.feature.service.ApplyFeatureIntentService" />
+        <service android:name="com.gumtree.android.savedsearches.NewSavedSearchesIntentService" />
+        <service android:name="com.gumtree.android.vip.api.VipDetailsIntentService" />
+        <service android:name="com.gumtree.android.message_box.DeleteConversationIntentService" />
+        <service android:name="com.gumtree.android.message_box.FlagConversationIntentService" />
+        <service android:name="com.gumtree.android.message_box.PostConversationReplyIntentService" />
+        <service android:name="com.gumtree.android.message_box.ConversationsIntentService" />
+        <service android:name="com.gumtree.android.message_box.conversation.ConversationIntentService" />
+        <service android:name="com.gumtree.android.auth.api.ActivateAccountIntentService" />
+        <service android:name="com.gumtree.android.srp.bing.BingSRPIntentService" />
+        <service android:name="com.gumtree.android.vip.bing.BingVIPIntentService" />
+        <service android:name="com.gumtree.android.clients.SoftUpdateService" />
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService" android:enabled="true" android:exported="false" />
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="430d11e22fc6a6f9794c6c95a25209b598a420a4" />
+        <receiver android:name="com.gumtree.android.common.connectivity.ConnectivityChangeReceiver" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.gumtree.android.common.analytics.InstallReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.gumtree.android.notifications.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.gumtree.android.beta" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.gumtree.android.notifications.GcmIntentService" />
+        <activity android:theme="@style/ApptentiveTheme_Base_Versioned" android:name="com.apptentive.android.sdk.ApptentiveViewActivity" />
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" />
+        <activity android:theme="@style/Theme_IAPTheme" android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true" />
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true" />
+        <activity android:theme="@style/FullscreenTheme" android:name="com.ebay.kleinanzeigen.imagepicker.EbkImagePickerActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/LibraryTheme" android:name="com.ebay.kleinanzeigen.imagepicker.image_library.ImageLibraryActivity" />
+        <activity android:theme="@style/LibraryTheme" android:label="@string/ebk_image_picker_folders_title" android:name="com.ebay.kleinanzeigen.imagepicker.image_library.ImageLibraryFoldersActivity" />
+        <activity android:theme="@style/LibraryTheme" android:name="com.ebay.kleinanzeigen.imagepicker.image_editing.ImageGalleryActivity" android:uiOptions="splitActionBarWhenNarrow" />
+        <activity android:theme="@style/LibraryTheme" android:name="com.soundcloud.android.crop.CropImageActivity" android:uiOptions="splitActionBarWhenNarrow" />
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false" />
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.gumtree.android.beta.firebaseinitprovider" android:initOrder="100" />
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.gumtree.android.beta" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" />
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

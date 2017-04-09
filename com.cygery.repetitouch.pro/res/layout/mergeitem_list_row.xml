@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="0" android:background="res/drawable/mergeitem_background_selector.xml" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="-1" android:layout_height="-2">
+	<LinearLayout android:orientation="0" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+		<ImageView android:layout_gravity="16" android:id="false" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="-2" android:layout_height="-2" android:src="res/drawable-xhdpi-v4/ic_drag_handle.png" />
+		<LinearLayout android:orientation="1" android:layout_width="-2" android:layout_height="-2">
+			<TextView android:textAppearance="@android:style/TextAppearance.Medium" android:textColor="resourceId:0x1060005" android:id="false" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+		</LinearLayout>
+	</LinearLayout>
+	<RelativeLayout android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1082130432}">
+		<TextView android:textAppearance="@android:style/TextAppearance.Medium" android:gravity="1" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentTop="true" />
+		<FrameLayout android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_below="false">
+			<LinearLayout android:orientation="1" android:id="false" android:visibility="1" android:layout_width="-1" android:layout_height="-2">
+				<TextView android:ellipsize="1" android:gravity="1" android:id="false" android:layout_width="-1" android:layout_height="-2" android:singleLine="true" />
+			</LinearLayout>
+			<LinearLayout android:orientation="1" android:id="false" android:visibility="1" android:layout_width="-1" android:layout_height="-2">
+				<RelativeLayout android:layout_width="-1" android:layout_height="-2">
+					<TextView android:gravity="1" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text=" .. " android:layout_centerHorizontal="true" />
+					<TextView android:gravity="5" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_toLeftOf="false" />
+					<TextView android:gravity="3" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_toRightOf="false" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="1" android:id="false" android:visibility="1" android:layout_width="-1" android:layout_height="-2" />
+		</FrameLayout>
+		<TextView android:gravity="81" android:layout_gravity="80" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_below="false" android:layout_alignParentBottom="true" />
+	</RelativeLayout>
+	<LinearLayout android:orientation="1" android:paddingRight="4dp" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+		<TextView android:gravity="5" android:id="false" android:layout_width="-1" android:layout_height="-2" android:drawablePadding="4dp" />
+		<TextView android:gravity="5" android:id="false" android:layout_width="-1" android:layout_height="-2" android:drawablePadding="4dp" />
+		<TextView android:typeface="3" android:gravity="5" android:id="false" android:layout_width="-1" android:layout_height="-2" />
+	</LinearLayout>
+	<ImageView android:layout_gravity="16" android:id="false" android:paddingLeft="4dp" android:paddingRight="4dp" android:visibility="2" android:layout_width="-2" android:layout_height="-2" />
+</LinearLayout>

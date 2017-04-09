@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/postad_category_selection_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <include android:id="@+id/postad_category_selection_waiting" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_loading" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@+id/postad_category_selection_suggestion_by_ad_title_header" android:paddingTop="@dimen/keyline_1_5x" android:paddingBottom="@dimen/keyline_half" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline" android:layout_marginRight="@dimen/keyline" android:text="@string/post_ad_suggested_categories_based_ad_title_header" style="@style/Text_Body2_Secondary" />
+        <TextView android:textSize="14sp" android:textColor="?unknown_attr_ref: 101009b" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/postad_category_manual_category_selection" android:paddingTop="@dimen/keyline" android:paddingBottom="@dimen/keyline" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline" android:layout_marginRight="@dimen/keyline" android:text="@string/post_ad_select_category_manually" android:layout_alignParentBottom="true" android:textAllCaps="true" />
+        <android.support.v7.widget.RecyclerView android:id="@+id/postad_category_selection_suggestions_by_ad_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/postad_category_manual_category_selection" android:layout_below="@+id/postad_category_selection_suggestion_by_ad_title_header" />
+    </RelativeLayout>
+</LinearLayout>

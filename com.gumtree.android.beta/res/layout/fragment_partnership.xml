@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/ad_partnership_wrapper" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/keyline"
+    <FrameLayout app:id="@+id/ad_partnership" app:background="?unknown_attr_ref: 101030e" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1010387">
+        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/ad_partnership_logo" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline" app:layout_marginRight="@dimen/keyline" />
+        <TextView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/ad_partnership_title" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline_content" style="@style/Text_Body1" font="fonts/Roboto-Medium.ttf" />
+        <com.gumtree.android.common.views.TintImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_marginLeft="@dimen/keyline" app:src="@drawable/ic_code_white_24dp" app:supportTintColor="?attr/colorPrimaryAction" style="@style/ImageView_Icon" />
+    </FrameLayout>
+    <FrameLayout app:id="@+id/ad_partnership_web_holder" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0xc801" app:layout_marginTop="?unknown_attr_ref: 1010387">
+        <WebView app:id="@+id/ad_partnership_web" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f080056" app:layout_marginLeft="@dimen/keyline_content" app:layout_marginRight="@dimen/keyline" />
+    </FrameLayout>
+</FrameLayout>

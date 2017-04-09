@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item android:icon="res/drawable-xhdpi-v4/ic_action_select_all.png" android:id="false" android:title="Select all" app:showAsAction="1" />
+	<item android:icon="res/drawable-xhdpi-v4/ic_action_discard.png" android:id="false" android:title="Delete" app:showAsAction="1" />
+	<item android:icon="res/drawable-xhdpi-v4/ic_action_copy.png" android:id="false" android:title="Duplicate" app:showAsAction="1" />
+	<item android:icon="res/drawable-xhdpi-v4/ic_action_merge.png" android:id="false" android:title="Merge" app:showAsAction="1" />
+	<item android:icon="res/drawable-xhdpi-v4/ic_action_save.png" android:id="false" android:title="Save" app:showAsAction="1" />
+</menu>

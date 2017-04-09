@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/favourites_root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.gumtree.android.common.views.recycler.EnhancedRecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <TextView android:textAppearance="@style/Text_Subhead_Inverse" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_empty_favourites" android:layout_centerInParent="true" />
+    <include android:id="@+id/loading" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_loading" />
+</FrameLayout>

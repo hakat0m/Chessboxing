@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar" />
+    <fragment android:name="com.gumtree.android.post_ad.PostAdInsertionFeeFragment" android:id="@+id/insertion_fee" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar" />
+    <FrameLayout android:id="@+id/post_ad_steps_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/post_ad_buttons_next" android:layout_below="@+id/insertion_fee" />
+    <View android:background="@drawable/black_gradient_shadow_down" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f08004e" android:layout_below="@+id/insertion_fee" />
+    <ProgressBar android:id="@+id/progress_loader" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminate="true" android:layout_below="@+id/insertion_fee" style="@style/ProgressBar_Horizontal_Center" />
+    <include android:id="@+id/post_ad_buttons_next" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/post_ad_next_button_bar" />
+</RelativeLayout>

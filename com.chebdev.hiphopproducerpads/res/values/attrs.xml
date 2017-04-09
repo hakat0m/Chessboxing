@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="adSize">
+        <item>2</item>
+    </attr>
+    <attr name="adSizes">
+        <item>2</item>
+    </attr>
+    <attr name="adUnitId">
+        <item>2</item>
+    </attr>
+    <attr name="mapType">
+        <item>65536</item>
+        <item>4</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </attr>
+    <attr name="cameraBearing">
+        <item>32</item>
+    </attr>
+    <attr name="cameraTargetLat">
+        <item>32</item>
+    </attr>
+    <attr name="cameraTargetLng">
+        <item>32</item>
+    </attr>
+    <attr name="cameraTilt">
+        <item>32</item>
+    </attr>
+    <attr name="cameraZoom">
+        <item>32</item>
+    </attr>
+    <attr name="uiCompass">
+        <item>8</item>
+    </attr>
+    <attr name="uiRotateGestures">
+        <item>8</item>
+    </attr>
+    <attr name="uiScrollGestures">
+        <item>8</item>
+    </attr>
+    <attr name="uiTiltGestures">
+        <item>8</item>
+    </attr>
+    <attr name="uiZoomControls">
+        <item>8</item>
+    </attr>
+    <attr name="uiZoomGestures">
+        <item>8</item>
+    </attr>
+    <attr name="useViewLifecycle">
+        <item>8</item>
+    </attr>
+    <attr name="zOrderOnTop">
+        <item>8</item>
+    </attr>
+    <attr name="theme">
+        <item>65536</item>
+        <item>0</item>
+        <item>1</item>
+    </attr>
+    <attr name="environment">
+        <item>65536</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+    </attr>
+    <attr name="fragmentStyle">
+        <item>1</item>
+    </attr>
+    <attr name="fragmentMode">
+        <item>65536</item>
+        <item>1</item>
+        <item>2</item>
+    </attr>
+    <attr name="buyButtonHeight">
+        <item>65600</item>
+        <item>-1</item>
+        <item>-2</item>
+    </attr>
+    <attr name="buyButtonWidth">
+        <item>65600</item>
+        <item>-1</item>
+        <item>-2</item>
+    </attr>
+    <attr name="buyButtonText">
+        <item>65536</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </attr>
+    <attr name="buyButtonAppearance">
+        <item>65536</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </attr>
+    <attr name="maskedWalletDetailsTextAppearance">
+        <item>1</item>
+    </attr>
+    <attr name="maskedWalletDetailsHeaderTextAppearance">
+        <item>1</item>
+    </attr>
+    <attr name="maskedWalletDetailsBackground">
+        <item>17</item>
+    </attr>
+    <attr name="maskedWalletDetailsButtonTextAppearance">
+        <item>1</item>
+    </attr>
+    <attr name="maskedWalletDetailsButtonBackground">
+        <item>17</item>
+    </attr>
+    <attr name="maskedWalletDetailsLogoTextColor">
+        <item>16</item>
+    </attr>
+    <attr name="maskedWalletDetailsLogoImageType">
+        <item>65536</item>
+        <item>1</item>
+        <item>2</item>
+    </attr>
+</resources>

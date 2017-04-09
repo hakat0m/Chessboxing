@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:paddingLeft="@dimen/apptentive_activity_side_padding_upgrade" android:paddingRight="@dimen/apptentive_activity_side_padding_upgrade" android:fadingEdge="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="?attr/apptentiveDialogBackground" android:layout_width="match_parent" android:layout_height="wrap_content"
+            <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/apptentive_activity_vertical_padding" android:layout_marginBottom="@dimen/apptentive_activity_vertical_padding">
+                <ImageView android:id="@+id/icon" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:adjustViewBounds="true" />
+                <WebView android:id="@+id/webview" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </LinearLayout>
+            <include layout="@layout/apptentive_branding" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

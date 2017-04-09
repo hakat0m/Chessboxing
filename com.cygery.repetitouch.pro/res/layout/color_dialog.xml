@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="false" android:layout_width="-1" android:layout_height="-2">
+	<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+		<RelativeLayout android:layout_gravity="17" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="-2" android:layout_height="-2">
+			<com.cygery.utilities.ColorView android:id="false" android:layout_width="100dp" android:layout_height="100dp" />
+			<TextView android:textSize="30sp" android:id="false" android:padding="20dp" android:layout_width="-2" android:layout_height="-2" android:text="→" android:layout_toRightOf="false" android:layout_centerInParent="false" android:layout_centerVertical="true" />
+			<com.cygery.utilities.ColorView android:id="false" android:layout_width="100dp" android:layout_height="100dp" android:layout_toRightOf="false" />
+		</RelativeLayout>
+		<TableLayout android:layout_width="-1" android:layout_height="-2">
+			<TableRow android:gravity="16" android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+				<TextView android:id="false" android:padding="8dp" android:layout_width="-2" android:layout_height="-2" android:text="Green" />
+				<SeekBar android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_margin="8dp" android:max="255" android:layout_weight="{4:1065353216}" />
+				<TextView android:gravity="5" android:id="false" android:padding="8dp" android:layout_width="-2" android:layout_height="-2" android:text="255" />
+			</TableRow>
+			<TableRow android:gravity="16" android:id="false" android:layout_width="-1" android:layout_height="-2">
+				<TextView android:id="false" android:padding="8dp" android:layout_width="-2" android:layout_height="-2" android:text="Red" />
+				<SeekBar android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_margin="8dp" android:max="255" android:layout_weight="{4:1065353216}" />
+				<TextView android:gravity="5" android:id="false" android:padding="8dp" android:layout_width="-2" android:layout_height="-2" />
+			</TableRow>
+			<TableRow android:gravity="16" android:id="false" android:layout_width="-1" android:layout_height="-2">
+				<TextView android:id="false" android:padding="8dp" android:layout_width="-2" android:layout_height="-2" android:text="Green" />
+				<SeekBar android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_margin="8dp" android:max="255" android:layout_weight="{4:1065353216}" />
+				<TextView android:gravity="5" android:id="false" android:padding="8dp" android:layout_width="-2" android:layout_height="-2" />
+			</TableRow>
+			<TableRow android:gravity="16" android:id="false" android:layout_width="-1" android:layout_height="-2">
+				<TextView android:id="false" android:padding="8dp" android:layout_width="-2" android:layout_height="-2" android:text="Blue" />
+				<SeekBar android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_margin="8dp" android:max="255" android:layout_weight="{4:1065353216}" />
+				<TextView android:gravity="5" android:id="false" android:padding="8dp" android:layout_width="-2" android:layout_height="-2" />
+			</TableRow>
+			<TableRow android:gravity="16" android:id="false" android:layout_width="-1" android:layout_height="-2">
+				<TextView android:id="false" android:padding="8dp" android:layout_width="-2" android:layout_height="-2" android:text="Alpha" />
+				<SeekBar android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_margin="8dp" android:max="255" android:layout_weight="{4:1065353216}" />
+				<TextView android:gravity="5" android:id="false" android:padding="8dp" android:layout_width="-2" android:layout_height="-2" />
+			</TableRow>
+		</TableLayout>
+		<View android:gravity="16" android:layout_width="-1" android:layout_height="8dp" />
+	</LinearLayout>
+</ScrollView>

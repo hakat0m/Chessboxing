@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="?attr/selectableItemBackground" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f01009e">
+    <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:id="@+id/display_content" app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="?attr/listPreferredItemHeightSmall">
+        <com.gumtree.android.common.views.TintImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="0x1020007" app:visibility="invisible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline" app:src="@drawable/ic_my_location_white_24dp" app:supportTintColor="?attr/colorPrimaryAction" />
+        <TextView app:textAppearance="@style/Text_Body1" app:ellipsize="end" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="0x1020014" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline" app:layout_marginRight="@dimen/keyline" app:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

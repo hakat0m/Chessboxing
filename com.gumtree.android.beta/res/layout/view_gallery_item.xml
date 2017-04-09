@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/gallery_item_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.gumtree.android.post_ad.gallery.GalleryImageView android:id="@+id/thumbnail_placeholder" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside" />
+</FrameLayout>

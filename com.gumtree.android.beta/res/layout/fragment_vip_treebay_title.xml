@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <RelativeLayout app:paddingLeft="@dimen/keyline" app:paddingRight="@dimen/keyline" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <ImageView app:id="@+id/ebay_logo" app:paddingTop="4dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:srcCompat="@drawable/ic_ebay_ad" />
+        <TextView app:ellipsize="end" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/vip_title" app:paddingTop="@dimen/keyline_half" app:paddingRight="@dimen/keyline" app:paddingBottom="@dimen/keyline_half" app:layout_width="match_parent" app:layout_height="wrap_content" app:maxLines="3" app:lines="3" app:layout_toLeftOf="@+id/ebay_logo" style="@style/Text_Title" />
+    </RelativeLayout>
+    <View app:background="?attr/dividerColor" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f010204" app:layout_marginLeft="@dimen/keyline" app:layout_marginRight="@dimen/keyline" />
+</LinearLayout>

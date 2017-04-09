@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gumtree.android.vip.reply.ui.NoCVLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <com.gumtree.android.common.views.TintImageView app:id="@+id/icon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_insert_drive_file_white_24dp" app:layout_alignParentLeft="true" app:layout_alignParentTop="true" app:supportTintColor="?attr/colorIconAction" style="@style/ImageView_Icon" />
+    <TextView app:textAppearance="@style/Text_Body1" app:id="@+id/cv_message" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:text="@string/no_cv" app:layout_toRightOf="@+id/icon" app:layout_alignParentTop="true" />
+</com.gumtree.android.vip.reply.ui.NoCVLayout>

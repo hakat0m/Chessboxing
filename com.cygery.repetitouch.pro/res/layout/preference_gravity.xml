@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="12dp">
+	<RelativeLayout android:layout_width="-1" android:layout_height="-2">
+		<View android:layout_width="-2" android:layout_height="-2" android:layout_alignParentLeft="true" />
+		<View android:layout_width="-2" android:layout_height="-2" android:layout_alignParentRight="true" />
+		<RelativeLayout android:id="false" android:layout_width="120dp" android:layout_height="120dp" android:layout_centerHorizontal="true">
+			<RadioButton android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentLeft="true" />
+			<RadioButton android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_centerHorizontal="true" />
+			<RadioButton android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentRight="true" />
+			<RadioButton android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+			<RadioButton android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_centerInParent="true" />
+			<RadioButton android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+			<RadioButton android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+			<RadioButton android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+			<RadioButton android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+		</RelativeLayout>
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:paddingLeft="@dimen/apptentive_activity_side_padding_enjoyment" android:paddingRight="@dimen/apptentive_activity_side_padding_enjoyment" android:fadingEdge="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="?attr/apptentiveDialogBackground" android:layout_width="match_parent" android:layout_height="wrap_content"
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="24dp" android:layout_marginBottom="24dp" android:layout_marginStart="8dp" android:layout_marginEnd="24dp">
+                <ImageButton android:id="@+id/dismiss" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x2401" android:layout_height="UNKNOWN_DATA_0x2401" android:layout_marginRight="-8dp" android:src="@drawable/apptentive_ic_composing_close" android:scaleType="center" android:contentDescription="@string/apptentive_dismiss_placeholder" android:layout_marginEnd="-8dp" style="@style/Apptentive_Style_Widget_ImageButton_Dialog_Close" />
+                <TextView android:textAppearance="@style/Apptentive_TextAppearance_Title" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/title" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginStart="16dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@+id/button_container" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/no" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x2401" android:layout_marginLeft="8dp" android:layout_marginStart="8dp" style="?attr/apptentiveInteractionButtonStyle" />
+                <Button android:id="@+id/yes" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x2401" android:layout_marginLeft="24dp" android:layout_marginStart="24dp" style="?attr/apptentiveInteractionButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

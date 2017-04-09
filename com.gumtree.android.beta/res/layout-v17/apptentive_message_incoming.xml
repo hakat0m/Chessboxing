@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Apptentive_MessageCenterMessageFrame">
+    <TextView android:textAppearance="@style/Apptentive_TextAppearance_Caption_Bold" android:id="@+id/datestamp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Apptentive_Style_TextView_Timestamp" />
+    <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Apptentive_Style_Widget_CardView_Message">
+        <LinearLayout android:orientation="horizontal" android:background="?attr/apptentiveAttenuateColor" android:paddingLeft="16dp" android:paddingTop="14dp" android:paddingRight="16dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.apptentive.android.sdk.module.messagecenter.view.ApptentiveAvatarView android:id="@+id/avatar" android:layout_width="UNKNOWN_DATA_0x7f080034" android:layout_height="UNKNOWN_DATA_0x7f080034" style="?attr/apptentiveAvatarViewMessageStyle" />
+            <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/apptentive_compound_message_body_container" android:paddingLeft="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="18dp">
+                <TextView android:textAppearance="@style/Apptentive_TextAppearance_Subhead_Secondary" android:id="@+id/sender_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="@style/Apptentive_TextAppearance_Body1" android:autoLink="web|email|phone|map|all" android:id="@+id/apptentive_compound_message_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" />
+                <com.apptentive.android.sdk.util.image.ApptentiveImageGridView android:id="@+id/grid" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/apptentive_message_center_default_margin_medium" android:horizontalSpacing="@dimen/apptentive_image_grid_space_size" android:verticalSpacing="@dimen/apptentive_image_grid_space_size" android:numColumns="UNKNOWN_DATA_0x7f090009" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

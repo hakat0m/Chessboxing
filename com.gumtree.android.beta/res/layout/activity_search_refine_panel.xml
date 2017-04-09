@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:id="@+id/view_root" app:background="?attr/backgroundColorSecondary" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar app:theme="@style/ToolbarTheme_Inverse" app:id="@+id/refine_search_toolbar" app:background="0x106000b" app:layout_width="match_parent" app:layout_height="wrap_content" app:contentInsetStartWithNavigation="0dp" app:popupTheme="@style/ThemeOverlay_AppCompat_Light">
+        <LinearLayout app:orientation="vertical" app:id="@+id/refine_search_toolbar_layout" app:layout_width="match_parent" app:layout_height="match_parent"
+            <LinearLayout app:orientation="horizontal" app:id="@+id/refine_search_keyword_layout" app:background="@drawable/toolbar_search_keyword_background" app:padding="@dimen/keyline_quarter" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginTop="8dp" app:layout_marginRight="@dimen/keyline" app:layout_marginBottom="8dp">
+                <ImageView app:id="@+id/refine_search_keyword_icon" app:padding="@dimen/keyline_half" app:layout_width="wrap_content" app:layout_height="wrap_content" app:srcCompat="@drawable/ic_magnify_disabled_24dp" />
+                <TextView app:textAppearance="@style/Text_Subhead_Regular" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/refine_search_keyword_text" app:layout_width="match_parent" app:layout_height="match_parent" app:hint="@string/refine_search_keyword_hint" />
+            </LinearLayout>
+            <LinearLayout app:orientation="horizontal" app:id="@+id/refine_search_category_layout" app:background="@drawable/toolbar_search_keyword_background" app:padding="@dimen/keyline_quarter" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginRight="@dimen/keyline" app:layout_marginBottom="8dp">
+                <ImageView app:id="@+id/refine_search_category_icon" app:padding="@dimen/keyline_half" app:layout_width="wrap_content" app:layout_height="match_parent" app:tint="?attr/colorPrimaryAction" app:srcCompat="@drawable/ic_all_categories_24dp" />
+                <TextView app:textAppearance="@style/Text_Subhead_Regular" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/refine_search_category_name" app:layout_width="match_parent" app:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout app:orientation="horizontal" app:id="@+id/refine_search_location_layout" app:background="@drawable/toolbar_search_keyword_background" app:padding="@dimen/keyline_quarter" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline" app:layout_marginTop="16dp" app:layout_marginRight="@dimen/keyline">
+        <TextView app:textAppearance="@style/Text_Subhead_Regular" app:id="@+id/refine_search_location_content" app:padding="@dimen/keyline_half" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="8dp" app:hint="@string/refine_search_location_hint" />
+    </LinearLayout>
+    <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0">
+        <Button app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/refine_search_btn" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0801ba" app:text="@string/refine_search_submit" style="@style/Button_PrimaryAction_Unbounded" />
+    </LinearLayout>
+</LinearLayout>

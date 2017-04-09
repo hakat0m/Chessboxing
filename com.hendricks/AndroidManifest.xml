@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hendricks" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+	<uses-sdk android:minSdkVersion="19" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<application android:theme="null" android:label="Multi Tap Counter" android:icon="res/drawable-xhdpi-v4/app_icon.png" android:name=".SketchApplication" android:allowBackup="true">
+		<activity android:name=".MainActivity" android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".DebugActivity" android:screenOrientation="portrait" />
+	</application>
+</manifest>

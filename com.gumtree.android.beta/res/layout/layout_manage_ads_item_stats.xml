@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@drawable/background_manage_ads_stats_layout" app:paddingTop="@dimen/keyline_quarter" app:paddingBottom="@dimen/keyline_quarter" app:clickable="true" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline_half" app:layout_marginRight="@dimen/keyline_half" app:layout_marginBottom="@dimen/keyline_half">
+    <LinearLayout app:orientation="horizontal" app:id="@+id/manage_ads_stats_layout" app:layout_width="match_parent" app:layout_height="wrap_content" app:weightSum="3.0">
+        <FrameLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_weight="1.0">
+            <TextView app:textAppearance="@style/Text_Body1_Medium" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/manage_ads_item_ad_view" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+            <TextView app:textAppearance="@style/Text_Caption" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="20dp" app:text="@string/manage_ads_item_ad_view" />
+        </FrameLayout>
+        <View app:background="@color/branch_20" app:layout_width="UNKNOWN_DATA_0x101" app:layout_height="match_parent" app:layout_marginTop="@dimen/keyline_quarter" app:layout_marginBottom="@dimen/keyline_quarter" app:alpha="0.5" />
+        <FrameLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_weight="1.0">
+            <TextView app:textAppearance="@style/Text_Body1_Medium" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/manage_ads_item_ad_list_view" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+            <TextView app:textAppearance="@style/Text_Caption" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="20dp" app:text="@string/manage_ads_item_ad_list_view" />
+        </FrameLayout>
+        <View app:background="@color/branch_20" app:layout_width="UNKNOWN_DATA_0x101" app:layout_height="match_parent" app:layout_marginTop="@dimen/keyline_quarter" app:layout_marginBottom="@dimen/keyline_quarter" app:alpha="0.5" />
+        <FrameLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_weight="1.0">
+            <TextView app:textAppearance="@style/Text_Body1_Medium" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/manage_ads_item_ad_replies" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+            <TextView app:textAppearance="@style/Text_Caption" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="20dp" app:text="@string/manage_ads_item_ad_replies" />
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/manage_ads_empty_stats_layout" app:visibility="invisible" app:layout_width="match_parent" app:layout_height="match_parent">
+        <ImageView app:id="@+id/manage_ads_empty_stats_layout_icon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:tint="@color/bark_50pct_white_opacity" app:layout_centerVertical="true" app:srcCompat="@drawable/ic_assessment_white_24dp" />
+        <TextView app:textAppearance="@style/Text_Caption" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline_quarter" app:text="@string/manage_ads_empty_stats" app:layout_toRightOf="@+id/manage_ads_empty_stats_layout_icon" app:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

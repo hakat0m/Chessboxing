@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/actionbar_discard" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_weight="1.0" style="@style/ActionBarButton">
+    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="0x106000b" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/gbl_done" android:paddingLeft="@dimen/gutter" android:paddingRight="@dimen/gutter_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebk_image_picker_discard" android:drawableLeft="@drawable/ebk_image_picker_ic_action_discard" android:drawablePadding="8dp" android:textAllCaps="true" />
+</FrameLayout>

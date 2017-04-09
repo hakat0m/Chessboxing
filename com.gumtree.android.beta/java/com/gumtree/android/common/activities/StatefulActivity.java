@@ -1,0 +1,41 @@
+package com.gumtree.android.common.activities;
+
+public interface StatefulActivity {
+    public static final String ACTION_PICK_FOR_POST = "com.gumtree.android.intent.ACTION_PICK_FOR_POST";
+    public static final String ACTION_PREVIEW = "com.gumtree.android.intent.ACTION_PREVIEW";
+    public static final String ACTION_VIEW_GALLERY = "com.gumtree.android.intent.ACTION_VIEW_GALLERY";
+    public static final String ACTION_VIEW_WITH_BEAM = "com.gumtree.android.intent.ACTION_VIEW_WITH_BEAM";
+    public static final String EXTRA_AD_TYPE = "ad_type";
+    public static final String EXTRA_CATEGORY_ID = "categoryId";
+    public static final String EXTRA_CATEGORY_NAME = "categoryName";
+    public static final String EXTRA_CATEGORY_PATH = "categoryPath";
+    public static final String EXTRA_CURRENT_GALLERY_PAGER_POS = "currentGalleryPagerPos";
+    public static final String EXTRA_IMAGES_URL = "imagesUrl";
+    public static final String EXTRA_L1_CATEGORY_NAME = "l1CategoryName";
+    public static final String EXTRA_LATEST_INTENT = "latestIntent";
+    public static final String EXTRA_LIST_SEARCH = "isListSearch";
+    public static final String EXTRA_LOCATION_NAME = "locationName";
+    public static final String EXTRA_LOCATION_TEXT = "location_free_text";
+    public static final String EXTRA_NEAR_BY_SEARCH = "isNearBySearch";
+    public static final String EXTRA_ON_FIRST_INSTALL = "firstInstall";
+    public static final String EXTRA_PATH_NAMES = "pathNames";
+    public static final String EXTRA_POSTCODE = "postcode";
+    public static final String EXTRA_POST_AD_ID = "post_ad_id";
+    public static final String EXTRA_REPLY_TEMPLATE = "replyTemplate";
+    public static final String EXTRA_SELLER_DATA = "seller_data";
+    public static final String EXTRA_SESSION_TIMESTAMP = "sessionTimestamp";
+    public static final String EXTRA_SORT_TYPE = "sortType_selected";
+    public static final String EXTRA_TITLE = "title";
+    public static final String EXTRA_VISIBLE_MAP = "visible_on_map";
+    public static final String NAME_CATEGORY_ID = "categoryId";
+    public static final String NAME_DISTANCE = "distance";
+    public static final String NAME_LATITUDE = "latitude";
+    public static final String NAME_LOCATION_ID = "locationId";
+    public static final String NAME_LONGITUDE = "longitude";
+    public static final String NAME_MAX_PRICE = "maxPrice";
+    public static final String NAME_MIN_PRICE = "minPrice";
+    public static final String NAME_PICTURE_REQUIRED = "pictureRequired";
+    public static final String NAME_QUERY = "q";
+    public static final String NAME_SORT_TYPE = "sortType";
+    public static final String NAME_ZIPCODE = "zipcode";
+}

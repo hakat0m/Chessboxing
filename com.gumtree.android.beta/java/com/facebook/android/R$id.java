@@ -1,0 +1,42 @@
+package com.facebook.android;
+
+public final class R$id {
+    public static final int bottom = 2131624010;
+    public static final int box_count = 2131624046;
+    public static final int button = 2131624047;
+    public static final int center = 2131623983;
+    public static final int com_facebook_body_frame = 2131624384;
+    public static final int com_facebook_button_xout = 2131624386;
+    public static final int com_facebook_login_activity_progress_bar = 2131624368;
+    public static final int com_facebook_picker_activity_circle = 2131624367;
+    public static final int com_facebook_picker_checkbox = 2131624370;
+    public static final int com_facebook_picker_checkbox_stub = 2131624374;
+    public static final int com_facebook_picker_divider = 2131624378;
+    public static final int com_facebook_picker_done_button = 2131624377;
+    public static final int com_facebook_picker_image = 2131624371;
+    public static final int com_facebook_picker_list_section_header = 2131624375;
+    public static final int com_facebook_picker_list_view = 2131624366;
+    public static final int com_facebook_picker_profile_pic_stub = 2131624372;
+    public static final int com_facebook_picker_row_activity_circle = 2131624369;
+    public static final int com_facebook_picker_search_text = 2131624383;
+    public static final int com_facebook_picker_title = 2131624373;
+    public static final int com_facebook_picker_title_bar = 2131624380;
+    public static final int com_facebook_picker_title_bar_stub = 2131624379;
+    public static final int com_facebook_picker_top_bar = 2131624376;
+    public static final int com_facebook_search_bar_view = 2131624382;
+    public static final int com_facebook_tooltip_bubble_view_bottom_pointer = 2131624388;
+    public static final int com_facebook_tooltip_bubble_view_text_body = 2131624387;
+    public static final int com_facebook_tooltip_bubble_view_top_pointer = 2131624385;
+    public static final int com_facebook_usersettingsfragment_login_button = 2131624391;
+    public static final int com_facebook_usersettingsfragment_logo_image = 2131624389;
+    public static final int com_facebook_usersettingsfragment_profile_name = 2131624390;
+    public static final int inline = 2131624048;
+    public static final int large = 2131624049;
+    public static final int left = 2131624014;
+    public static final int normal = 2131623987;
+    public static final int picker_subtitle = 2131624381;
+    public static final int right = 2131624015;
+    public static final int small = 2131624050;
+    public static final int standard = 2131624040;
+    public static final int top = 2131624016;
+}

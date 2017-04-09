@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentTop="true">
+	<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+		<Button android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Save" />
+		<Button android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Load" />
+		<Button android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Editor" />
+		<Button android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Merger" />
+		<Button android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Settings" />
+		<Button android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Toggle Panel" />
+		<Button android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Toggle Drag" />
+		<Button android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Toggle Record Button" />
+		<Button android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Exit" />
+	</LinearLayout>
+</ScrollView>

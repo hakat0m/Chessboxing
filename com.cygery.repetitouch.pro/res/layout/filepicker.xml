@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentTop="true">
+		<TextView android:textSize="16sp" android:id="false" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="10dp" android:text="Current directory:" />
+		<TextView android:textSize="16sp" android:id="false" android:padding="10dp" android:layout_width="0dp" android:layout_height="-2" android:text="" android:layout_weight="{4:1065353216}" />
+		<Button android:id="false" android:layout_width="-2" android:layout_height="-2" android:minWidth="40dp" android:minHeight="40dp" android:text="+" />
+	</LinearLayout>
+	<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true">
+		<EditText android:id="false" android:layout_width="0dp" android:layout_height="-2" android:hint="New File" android:layout_weight="{4:1065353216}">
+			<requestFocus />
+		</EditText>
+		<Button android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Save" />
+	</LinearLayout>
+	<ListView android:id="false" android:layout_width="-1" android:layout_height="-1" android:layout_above="false" android:layout_below="false" />
+</RelativeLayout>

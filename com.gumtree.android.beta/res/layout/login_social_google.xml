@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/sign_in_button" android:paddingLeft="7dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2d01" android:text="@string/google_login_btn" android:drawableLeft="@drawable/ic_btn_google" style="@style/GoogleLoginButton" />
+</LinearLayout>

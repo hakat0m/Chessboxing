@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-1">
+		<LinearLayout android:gravity="1" android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_weight="{4:1073741824}">
+			<LinearLayout android:gravity="1" android:orientation="1" android:id="false" android:padding="4dp" android:layout_width="-1" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+				<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2">
+					<EditText android:textSize="12sp" android:textColor="000" android:textColorHint="607d8b" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Name" android:hint="Name of counter" android:singleLine="true" android:layout_weight="{4:1090519040}" />
+					<Button android:textSize="10sp" android:textColor="000" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Clear" android:layout_weight="{4:1073741824}" />
+				</LinearLayout>
+				<Button android:textSize="50sp" android:textColor="000" android:id="false" android:layout_width="-1" android:layout_height="-1" android:text="Counter 1" android:layout_weight="{4:1065353216}" />
+				<Button android:textSize="12sp" android:textColor="000" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="- (minus)" />
+			</LinearLayout>
+			<LinearLayout android:gravity="1" android:orientation="1" android:id="false" android:padding="4dp" android:layout_width="-1" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+				<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2">
+					<EditText android:textSize="12sp" android:textColor="000" android:textColorHint="607d8b" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Name" android:hint="Name of counter" android:singleLine="true" android:layout_weight="{4:1090519040}" />
+					<Button android:textSize="10sp" android:textColor="000" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Clear" android:layout_weight="{4:1073741824}" />
+				</LinearLayout>
+				<Button android:textSize="50sp" android:textColor="000" android:id="false" android:layout_width="-1" android:layout_height="-1" android:text="Counter 2" android:layout_weight="{4:1065353216}" />
+				<Button android:textSize="12sp" android:textColor="000" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="- (minus)" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:gravity="1" android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_weight="{4:1073741824}">
+			<LinearLayout android:gravity="1" android:orientation="1" android:id="false" android:padding="4dp" android:layout_width="-1" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+				<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2">
+					<EditText android:textSize="12sp" android:textColor="000" android:textColorHint="607d8b" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Name" android:hint="Name of counter" android:singleLine="true" android:layout_weight="{4:1090519040}" />
+					<Button android:textSize="10sp" android:textColor="000" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Clear" android:layout_weight="{4:1073741824}" />
+				</LinearLayout>
+				<Button android:textSize="50sp" android:textColor="000" android:id="false" android:layout_width="-1" android:layout_height="-1" android:text="Counter 3" android:layout_weight="{4:1065353216}" />
+				<Button android:textSize="12sp" android:textColor="000" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="- (minus)" />
+			</LinearLayout>
+			<LinearLayout android:layout_gravity="1" android:orientation="1" android:id="false" android:padding="4dp" android:layout_width="-1" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+				<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2">
+					<EditText android:textSize="12sp" android:textColor="000" android:textColorHint="607d8b" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Name" android:hint="Name of counter" android:singleLine="true" android:layout_weight="{4:1090519040}" />
+					<Button android:textSize="10sp" android:textColor="000" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Clear" android:layout_weight="{4:1073741824}" />
+				</LinearLayout>
+				<Button android:textSize="50sp" android:textColor="000" android:id="false" android:layout_width="-1" android:layout_height="-1" android:text="Counter 4" android:layout_weight="{4:1065353216}" />
+				<Button android:textSize="12sp" android:textColor="000" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="- (minus)" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:gravity="1" android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2">
+			<Button android:textSize="10sp" android:textColor="000" android:id="false" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="2dp" android:layout_width="-2" android:layout_height="-2" android:text="Clear ALL Counters and Names" />
+			<Button android:textSize="10sp" android:textColor="000" android:id="false" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="2dp" android:layout_width="-2" android:layout_height="-2" android:text="Clear All Counters" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

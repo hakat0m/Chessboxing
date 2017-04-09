@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14dp" android:textStyle="bold" android:id="@+id/message_center_badge_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:text="0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@+id/message_center_badge_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/apptentive_ic_message_center_badge" android:layout_toRightOf="@+id/message_center_badge_counter" android:layout_alignParentTop="true" />
+</RelativeLayout>

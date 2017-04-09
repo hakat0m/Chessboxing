@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/layout_manage_ads_item" app:background="0x106000b" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline_half" app:layout_marginTop="@dimen/keyline_half" app:layout_marginRight="@dimen/keyline_half" app:cardCornerRadius="4dp">
+    <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <include app:id="@+id/manage_ads_item_info_header" layout="@layout/layout_manage_ads_item_info_header" />
+        <include app:id="@+id/manage_ads_item_main" layout="@layout/layout_manage_ads_item_main" />
+        <include app:id="@+id/manage_ads_item_stats" layout="@layout/layout_manage_ads_item_stats" />
+        <include app:id="@+id/manage_ads_item_options_footer" layout="@layout/layout_manage_ads_item_options_footer" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

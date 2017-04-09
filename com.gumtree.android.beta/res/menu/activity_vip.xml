@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:icon="@drawable/ic_star_unchecked" app:id="@+id/menu_favourite" app:title="@string/menu_favourite" app:showAsAction="always" />
+    <item app:icon="@drawable/ic_share" app:id="@+id/menu_share" app:title="@string/menu_share" app:showAsAction="always" />
+</menu>

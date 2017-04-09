@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:id="@+id/view_root" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar app:theme="@style/ThemeOverlay_AppCompat_Dark_ActionBar" app:id="@+id/toolbar" app:background="?attr/colorPrimary" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f01006d" app:popupTheme="@style/ThemeOverlay_AppCompat_Light" />
+    <FrameLayout app:layout_width="match_parent" app:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout app:id="@+id/sellers_other_items_swipe_refresh" app:layout_width="match_parent" app:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView app:id="@+id/sellers_other_items_recycler_view" app:layout_width="match_parent" app:layout_height="match_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <TextView app:id="@+id/sellers_other_items_empty" app:background="?attr/backgroundColorPrimary" app:padding="@dimen/keyline" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent" style="@style/Text_Body1" />
+        <include app:id="@+id/sellers_other_items_main_loading" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" layout="@layout/layout_loading" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/loading" android:background="?attr/backgroundColorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/ProgressBar_Horizontal_Center" />
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/selectableItemBackground" android:padding="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="@style/Text_Body1" android:id="@+id/search_item_name" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="@style/Text_Caption" android:id="@+id/search_item_category" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

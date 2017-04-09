@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar" />
+    <com.gumtree.android.common.views.StickyScrollView android:id="@+id/scroll" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:background="?attr/backgroundColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/fragment_layout_pager_holder" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <fragment android:name="com.gumtree.android.post_ad.preview.PreviewTitleFragment" android:tag="preview_title" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <fragment android:name="com.gumtree.android.post_ad.preview.PreviewPriceFragment" android:id="@+id/fragment_vip_price_holder" android:tag="preview_price" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <fragment android:name="com.gumtree.android.post_ad.preview.PreviewAttributesFragment" android:id="@+id/fragment_vip_attr_holder" android:tag="preview_attributes" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <fragment android:name="com.gumtree.android.post_ad.preview.PreviewDescriptionFragment" android:id="@+id/fragment_vip_details_holder" android:tag="preview_desc" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/vip_admob_height" />
+        </LinearLayout>
+    </com.gumtree.android.common.views.StickyScrollView>
+    <fragment android:name="com.gumtree.android.post_ad.preview.PreviewContactFragment" android:id="@+id/fragment_vip_contact_holder" android:tag="preview_contact" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

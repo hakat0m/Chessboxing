@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <GridView android:id="0x102000a" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numColumns="UNKNOWN_DATA_0x1" android:divider="0x106000d" />
+    <TextView android:textAppearance="@style/Text_Title" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="0x1020004" android:paddingLeft="@dimen/keyline" android:paddingRight="@dimen/keyline" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keyline" android:text="@string/empty_inbox" android:drawableTop="@drawable/ic_empty_message" style="@style/Text_Title_Secondary" />
+    <include android:id="@+id/loading" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_loading" />
+</android.support.design.widget.CoordinatorLayout>

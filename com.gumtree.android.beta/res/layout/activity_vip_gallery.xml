@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/gallery_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.gumtree.android.gallery.GalleryViewPager android:id="@+id/gallery_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="0x1020004" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/background_no_img" android:adjustViewBounds="true" />
+    <TextView android:textColor="0x106000b" android:id="@+id/indicator" android:background="@drawable/bg_dark_rounded_corners" android:paddingLeft="12dp" android:paddingTop="@dimen/keyline_half" android:paddingRight="12dp" android:paddingBottom="@dimen/keyline_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/keyline" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

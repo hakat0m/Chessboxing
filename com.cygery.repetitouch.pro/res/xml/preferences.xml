@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cygery="http://schemas.android.com/apk/res-auto">
+	<ListPreference android:title="Event Index" android:key="eventIndexString" android:summary="Choose the event index of your touchscreen (requires restart)" android:defaultValue="" android:dialogTitle="Event Index" />
+	<PreferenceCategory android:title="Panel">
+		<CheckBoxPreference android:title="Flip Panel" android:key="flipPanelView" android:summary="Change between horizontal and vertical panel orientation" android:defaultValue="false" />
+		<CheckBoxPreference android:title="Panel may be put on top of status bar" android:key="ignoreStatusBar" android:defaultValue="false" />
+		<com.cygery.utilities.SeekBarPreference android:title="Icon size" android:key="panelIconSizeInt" android:defaultValue="35" cygery:unit="dp" cygery:min="10" cygery:max="100" cygery:persistOnSeekBarChange="false" />
+		<com.cygery.utilities.SeekBarPreference android:title="Icon opacity" android:key="panelIconOpacity" android:defaultValue="100" cygery:unit="%" cygery:min="25" cygery:max="100" cygery:persistOnSeekBarChange="false" />
+		<com.cygery.utilities.ColorDialogPreference android:title="Background color" android:key="panelBackgroundColor" android:defaultValue="-16777216" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Replay">
+		<CheckBoxPreference android:title="Hide panel during replay" android:key="hidePanelDuringReplay" android:defaultValue="false" />
+		<CheckBoxPreference android:title="Start replay paused" android:key="startReplayPaused" android:defaultValue="false" />
+		<EditTextPreference android:selectAllOnFocus="false" android:title="List of loop counts for loop replay" android:key="loopTimes" android:summary="Start loop replay by long clicking on the replay button. Input loop counts separated by commas, e.g., &lt;b&gt;&lt;i&gt;2,5,inf,edit&lt;/i&gt;&lt;/b&gt;. Use &lt;b&gt;&lt;i&gt;inf&lt;/i&gt;&lt;/b&gt; for infinite looping. Use &lt;b&gt;&lt;i&gt;edit&lt;/i&gt;&lt;/b&gt; to set the loop count when the loop replay is started." android:defaultValue="2,5,inf,edit" />
+		<EditTextPreference android:selectAllOnFocus="true" android:numeric="5" android:title="Replay speed" android:key="replaySpeed" android:summary="Replay the events at %1$s speed" android:defaultValue="1" />
+		<CheckBoxPreference android:title="Dim the screen when replaying" android:key="dimScreenOnReplay" android:defaultValue="false" />
+		<com.cygery.utilities.SeekBarPreference android:enabled="false" android:title="Screen brightness" android:key="dimScreenPercentageInt" android:defaultValue="10" cygery:unit="%" cygery:min="0" cygery:max="100" cygery:persistOnSeekBarChange="false" />
+		<EditTextPreference android:enabled="false" android:selectAllOnFocus="true" android:numeric="1" android:title="Dimming delay" android:key="dimDelaySeconds" android:defaultValue="0" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Miscellaneous">
+		<CheckBoxPreference android:title="Start on boot" android:key="startOnBoot" android:defaultValue="false" />
+		<CheckBoxPreference android:title="Hide loading screen" android:key="noLoadingScreen" android:defaultValue="false" />
+		<CheckBoxPreference android:title="Hide panel on start" android:key="hidePanelOnStart" android:defaultValue="false" />
+		<com.cygery.utilities.SeekBarPreference android:title="Priority of notification" android:key="notificationPriority" android:defaultValue="0" cygery:unit="" cygery:min="-2" cygery:max="2" cygery:minLabel="min" cygery:maxLabel="max" cygery:medLabel="default" cygery:showUnit="false" cygery:showCurrentValue="false" cygery:persistOnSeekBarChange="false" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Advanced">
+		<PreferenceScreen android:title="Advanced" android:key="advanced_preferencescreen">
+			<PreferenceCategory android:title="Advanced">
+				<CheckBoxPreference android:title="Support for Automation Tools" android:key="enableLocaleSupport" android:summary="Allow any application to control recording and replaying. WARNING: Malicious apps could also control recording and replaying!" android:defaultValue="false" />
+				<CheckBoxPreference android:title="Enable operation during phone calls" android:key="ignoreCallState" android:summary="Allow recording and replaying during phone calls" android:defaultValue="false" />
+				<ListPreference android:entries="null" android:title="Override Multitouch Type" android:key="eventMultitouchType" android:summary="ONLY CHANGE THIS IF YOU KNOW WHAT YOU ARE DOING!" android:defaultValue="" android:dialogTitle="Override Multitouch Type" android:entryValues="null" />
+				<PreferenceScreen android:title="Additional Input Events" android:key="additional_events_preferencescreen" android:summary="Check the FAQ if you are unsure about the purpose of an additional input device" />
+			</PreferenceCategory>
+			<PreferenceCategory android:title="Debugging">
+				<Preference android:title="Send Report" android:key="send_report" android:summary="If you have an issue use this option to send an application report to the developer. Describe your issue in the shown email template" />
+				<Preference android:title="Save Report" android:key="save_report" android:summary="Save an application report to a file" />
+			</PreferenceCategory>
+			<PreferenceCategory android:title="Experimental" android:key="experimental_category">
+				<CheckBoxPreference android:title="Allow user input during replay" android:key="replayUnchecked" android:summary="This affects only input via the (main) touchscreen. Other input is always allowed. Use at your own risk!" android:defaultValue="false" />
+				<CheckBoxPreference android:title="Use alternative backlight control" android:key="useAlternativeBacklightControl" android:summary="Try to enable this option if setting the screen brightness to zero doesn&apos;t work" android:defaultValue="false" />
+				<CheckBoxPreference android:title="Use alternative touchscreen reset method" android:key="useAlternativeTouchscreenResetMethod" android:summary="Try to enable this option if your touchscreen becomes unresponsive after a replay finishes" android:defaultValue="false" />
+				<CheckBoxPreference android:title="Fix input event indices on start" android:key="fixInputEventIndices" android:summary="Only enable this if the input event indices change after rebooting your device" android:defaultValue="false" />
+				<CheckBoxPreference android:title="Use virtual input device for replay" android:key="useVirtualInputDevice" android:summary="Use this option to replay a recording from another device. Supports only touchscreen input. Use at your own risk!" android:defaultValue="false" />
+			</PreferenceCategory>
+		</PreferenceScreen>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="About">
+		<Preference android:title="About" android:key="about" />
+	</PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gumtree.android.common.views.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="@dimen/keyline" android:paddingRight="@dimen/keyline" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/keyline_content">
+    <TextView android:textAppearance="@style/Text_Body2" android:id="0x1020014" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="0x1020007" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</com.gumtree.android.common.views.CheckableRelativeLayout>

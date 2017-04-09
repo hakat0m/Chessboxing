@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:focusable="false" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.gumtree.android.common.views.ExpandableHeightGridView android:id="0x102000a" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/keyline" android:layout_marginRight="@dimen/keyline" android:listSelector="0x106000d" android:numColumns="UNKNOWN_DATA_0x7f09000c" android:divider="0x106000d" />
+    <com.gumtree.android.common.views.TintImageView android:layout_marginLeft="@dimen/keyline" android:layout_marginTop="12dp" android:src="@drawable/ic_list" style="@style/ImageView_Icon" />
+</FrameLayout>

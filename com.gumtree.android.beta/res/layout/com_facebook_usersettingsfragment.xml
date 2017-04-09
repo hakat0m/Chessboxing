@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res-auto" loginView:background="@drawable/com_facebook_usersettingsfragment_background_gradient" loginView:layout_width="match_parent" loginView:layout_height="match_parent">
+    <LinearLayout loginView:orientation="vertical" loginView:layout_width="match_parent" loginView:layout_height="wrap_content">
+        <ImageView loginView:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" loginView:id="@+id/com_facebook_usersettingsfragment_logo_image" loginView:layout_width="UNKNOWN_DATA_0xc101" loginView:layout_height="UNKNOWN_DATA_0x2c01" loginView:layout_marginTop="35dp" loginView:src="@drawable/com_facebook_logo" loginView:contentDescription="@string/com_facebook_logo_content_description" />
+        <TextView loginView:textSize="16sp" loginView:textStyle="bold" loginView:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" loginView:id="@+id/com_facebook_usersettingsfragment_profile_name" loginView:layout_width="match_parent" loginView:layout_height="UNKNOWN_DATA_0x6401" loginView:layout_marginTop="35dp" loginView:lines="1" />
+        <com.facebook.widget.LoginButton loginView:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" loginView:id="@+id/com_facebook_usersettingsfragment_login_button" loginView:layout_width="wrap_content" loginView:layout_height="wrap_content" loginView:layout_marginTop="35dp" loginView:layout_marginBottom="35dp" loginView:login_text="@string/com_facebook_usersettingsfragment_log_in_button" style="@style/com_facebook_loginview_silver_style" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:paddingLeft="@dimen/keyline_half" app:paddingTop="@dimen/keyline_three_quarters" app:paddingRight="@dimen/keyline_half" app:paddingBottom="@dimen/keyline_three_quarters" app:clickable="true" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <RelativeLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/manage_ads_item_status" app:background="?unknown_attr_ref: 101030e" app:layout_width="wrap_content" app:layout_height="wrap_content">
+        <TextView app:textAppearance="@style/Text_Caption_Medium" app:id="@+id/manage_ads_item_status_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_centerVertical="true" />
+        <ImageView app:id="@+id/manage_ads_item_status_icon" app:layout_width="UNKNOWN_DATA_0x1001" app:layout_height="UNKNOWN_DATA_0x1001" app:layout_marginLeft="@dimen/keyline_quarter" app:layout_toRightOf="@+id/manage_ads_item_status_text" app:layout_centerVertical="true" app:alpha="0.5" app:srcCompat="@drawable/information_outline" />
+    </RelativeLayout>
+    <TextView app:textAppearance="@style/Text_Caption" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/manage_ads_item_date" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+</FrameLayout>

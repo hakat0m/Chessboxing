@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="50dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline" android:layout_marginTop="@dimen/keyline" android:layout_marginRight="@dimen/keyline" layout="@layout/layout_username_password" />
+            <TextView android:textAppearance="@style/Text_Url" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/auth_forgotpass" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keyline" android:layout_marginRight="@dimen/keyline" android:layout_marginBottom="@dimen/keyline" android:text="@string/forgot_password" android:textAllCaps="true" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@+id/login" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" android:text="@string/login" android:layout_alignParentBottom="true" style="@style/Button_PrimaryAction_Unbounded" />
+</RelativeLayout>

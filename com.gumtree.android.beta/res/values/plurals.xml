@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="ads">
+        <item quantity="other">ads</item>
+        <item quantity="one">ad</item>
+    </plurals>
+    <plurals name="conversations_unread_notification">
+        <item quantity="other">%d unread conversations</item>
+        <item quantity="one">%d unread conversation</item>
+    </plurals>
+    <plurals name="delete_conversation_count">
+        <item quantity="other">%1$d conversations</item>
+        <item quantity="one">One conversation</item>
+    </plurals>
+    <plurals name="promotion_option_day">
+        <item quantity="other">%d days</item>
+        <item quantity="one">One day</item>
+    </plurals>
+    <plurals name="promotion_option_hour">
+        <item quantity="other">%d hours</item>
+        <item quantity="one">One hour</item>
+    </plurals>
+    <plurals name="promotion_option_minute">
+        <item quantity="other">%d minutes</item>
+        <item quantity="one">One minute</item>
+    </plurals>
+    <plurals name="promotion_option_unknown">
+        <item quantity="other">%d</item>
+    </plurals>
+    <plurals name="saved_searches_notification_title">
+        <item quantity="other">%d Search Alerts</item>
+        <item quantity="one">Search Alert</item>
+    </plurals>
+    <plurals name="sellers_ads_live">
+        <item quantity="other">%1$s ads live, posting for %2$s</item>
+        <item quantity="one">%1$s ad live, posting for %2$s</item>
+    </plurals>
+    <plurals name="vip_seller_other_items">
+        <item quantity="other">%1$s&apos;s other ads (%2$s)</item>
+        <item quantity="one">This is %1$s&apos;s only ad</item>
+    </plurals>
+</resources>

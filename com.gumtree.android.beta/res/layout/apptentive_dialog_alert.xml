@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/apptentiveDialogBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:windowMinWidthMajor="0x1050003">
+    <TextView android:textSize="20sp" android:textStyle="bold" android:id="@+id/text_title" android:paddingLeft="24dp" android:paddingTop="24dp" android:paddingRight="24dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:id="@+id/scrolltext" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_marginTop="16dp" android:layout_marginBottom="24dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/Apptentive_TextAppearance_Subhead_Secondary" android:id="@+id/text_message" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@+id/content" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" />
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2401">
+        <Button android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/button_negative" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="88dp" android:minHeight="36dp" android:text="decline" android:textAllCaps="true" style="?attr/apptentiveInteractionButtonStyle" />
+        <Button android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/button_positive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="88dp" android:minHeight="36dp" android:text="accept" android:textAllCaps="true" style="?attr/apptentiveInteractionButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

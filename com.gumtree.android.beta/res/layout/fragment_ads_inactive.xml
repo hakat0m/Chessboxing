@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/manage_ads_inactive_refresh_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView android:id="@+id/manage_ads_inactive_recycler" android:paddingBottom="@dimen/keyline_2x" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include android:id="@+id/manage_ads_empty_page" android:visibility="gone" layout="@layout/layout_manage_ads_empty_page" />
+    <ProgressBar android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/manage_ads_inactive_loader" android:padding="@dimen/keyline" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x7f0801b9" android:layout_height="UNKNOWN_DATA_0x7f0801b9" android:indeterminate="true" style="?unknown_attr_ref: 1010077" />
+</FrameLayout>

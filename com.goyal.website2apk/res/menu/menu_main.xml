@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item android:icon="res/drawable-mdpi/about.png" android:id="false" android:orderInCategory="100" android:title="About" />
+	<item android:icon="res/drawable-mdpi/exit.png" android:id="false" android:orderInCategory="100" android:title="Exit" />
+	<item android:icon="res/drawable-mdpi/ic_share_white_24dp.png" android:id="false" android:orderInCategory="100" android:title="Share" />
+</menu>

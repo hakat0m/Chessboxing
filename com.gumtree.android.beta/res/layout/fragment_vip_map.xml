@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/vip_map" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f080003">
+    <include android:id="@+id/fragment_desc_header" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/list_header" />
+    <FrameLayout android:id="@+id/map_holder" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f080003" android:layout_below="@+id/fragment_desc_header" />
+</RelativeLayout>

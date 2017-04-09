@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="6dp">
+	<RelativeLayout android:id="false" android:layout_width="-1" android:layout_height="-2">
+		<LinearLayout android:id="false" android:layout_width="-2" android:layout_height="-2">
+			<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" />
+		</LinearLayout>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="-1" android:layout_height="-2">
+		<SeekBar android:id="false" android:layout_width="-1" android:layout_height="-2" />
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="-1" android:layout_height="-2">
+		<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentLeft="true" />
+		<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_toRightOf="false" />
+		<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_centerHorizontal="true" />
+		<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_toRightOf="false" />
+		<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentRight="true" />
+		<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_toLeftOf="false" />
+	</RelativeLayout>
+</LinearLayout>

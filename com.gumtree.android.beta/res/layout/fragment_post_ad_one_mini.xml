@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/keyline_half" android:paddingTop="@dimen/keyline_half" android:paddingRight="@dimen/keyline" android:paddingBottom="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/post_ad_image" android:background="?attr/backgroundColorPrimary" android:layout_width="UNKNOWN_DATA_0x7f080010" android:layout_height="UNKNOWN_DATA_0x7f080010" android:foreground="?attr/selectableItemBackgroundBorderless">
+        <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/post_ad_camera_btn" android:layout_width="UNKNOWN_DATA_0x7f080010" android:layout_height="UNKNOWN_DATA_0x7f080010" android:scaleType="center" />
+    </FrameLayout>
+    <TextView android:id="@+id/post_ad_title" android:text="@string/text_title" android:layout_toLeftOf="@+id/post_ad_bubble_1" android:layout_toRightOf="@+id/post_ad_image" style="@style/PostAdMainText" />
+    <TextView android:id="@+id/post_ad_loc" android:text="@string/text_capitalised_location" android:layout_toLeftOf="@+id/post_ad_bubble_1" android:layout_toRightOf="@+id/post_ad_image" android:layout_below="@+id/post_ad_title" style="@style/PostAdMainText" />
+    <TextView android:id="@+id/post_ad_cat" android:text="@string/text_capitalised_category" android:layout_toLeftOf="@+id/post_ad_bubble_1" android:layout_toRightOf="@+id/post_ad_image" android:layout_below="@+id/post_ad_loc" style="@style/PostAdMainText" />
+    <TextView android:id="@+id/post_ad_bubble_1" android:text="@string/text_1" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/PostAdMainTickerText" />
+</RelativeLayout>

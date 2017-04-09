@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="?attr/selectableItemBackground" app:layout_width="match_parent" app:layout_height="wrap_content"
+    <RelativeLayout app:id="@+id/field" app:paddingBottom="@dimen/keyline" app:layout_width="wrap_content" app:layout_height="wrap_content" app:minHeight="60dp">
+        <TextView app:textAppearance="@style/Text_Button" app:id="0x1020015" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_toLeftOf="@+id/fragment_refine_search_button" app:layout_alignParentLeft="true" app:layout_centerVertical="true" app:textAllCaps="false" />
+        <com.gumtree.android.common.views.TintImageView app:id="@+id/fragment_refine_search_button" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_keyboard_arrow_right_white_24dp" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:supportTintColor="?attr/colorIconAction" />
+    </RelativeLayout>
+    <RelativeLayout app:id="@+id/rehome_layout" app:background="?attr/backgroundColorPrimary" app:padding="@dimen/keyline_half" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/field">
+        <TextView app:textAppearance="@style/Text_Body1" app:id="0x1020014" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/rehome_date" app:layout_alignParentLeft="true" app:layout_centerVertical="true" />
+        <TextView app:textAppearance="@style/Text_Body2" app:id="@+id/rehome_date" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView app:textAppearance="@style/Text_Caption" app:textStyle="italic" app:id="@+id/disclaimer" app:padding="@dimen/keyline_half" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_below="@+id/rehome_layout" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gumtree.android.common.activities.header.HeaderActionBar xmlns:android="http://schemas.android.com/apk/res-auto" app:background="?attr/backgroundColorSecondary" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f01006d">
+    <LinearLayout app:orientation="horizontal" app:id="@+id/menu_sort" app:background="?attr/selectableItemBackground" app:paddingLeft="@dimen/keyline" app:paddingRight="@dimen/keyline" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x7f01006d">
+        <com.gumtree.android.common.views.TintImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:src="@drawable/ic_sort_white_24dp" app:supportTintColor="?attr/colorIconAction" style="@style/ImageView_Icon" />
+        <TextView app:textAppearance="@style/Text_Body2" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline_half" app:text="@string/menu_sort" app:textAllCaps="true" />
+    </LinearLayout>
+    <LinearLayout app:orientation="horizontal" app:id="@+id/menu_save_search" app:background="?attr/selectableItemBackground" app:paddingRight="@dimen/keyline" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x7f01006d" app:layout_toRightOf="@+id/menu_sort">
+        <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:tint="?attr/colorIconAction" app:srcCompat="@drawable/ic_bell_plus_white_24dp" style="@style/ImageView_Icon" />
+        <TextView app:textAppearance="@style/Text_Body2" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline_half" app:text="@string/menu_save" app:textAllCaps="true" />
+    </LinearLayout>
+    <include app:id="@+id/tabs_view_selection" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true" layout="@toggletabview/LAYOUT_ID" />
+</com.gumtree.android.common.activities.header.HeaderActionBar>

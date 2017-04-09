@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="?attr/backgroundColorPrimary" app:layout_width="match_parent" app:layout_height="match_parent">
+    <TextView app:id="@+id/title" app:padding="@dimen/keyline" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_centerHorizontal="true" style="@style/Text_Title" />
+    <ImageView app:id="@+id/image" app:layout_width="match_parent" app:layout_height="match_parent" app:scaleType="fitCenter" app:layout_below="@+id/title" />
+    <LinearLayout app:orientation="vertical" app:id="@+id/content" app:background="?attr/backgroundColorSecondary" app:paddingTop="@dimen/keyline" app:paddingBottom="@dimen/keyline" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentBottom="true">
+        <FrameLayout app:id="@+id/text1_layout" app:layout_width="wrap_content" app:layout_height="wrap_content">
+            <com.gumtree.android.common.views.TintImageView app:layout_marginLeft="@dimen/keyline" app:src="@drawable/ic_done_white_24dp" app:supportTintColor="?attr/colorAccentDark" style="@style/ImageView_Icon" />
+            <TextView app:id="@+id/text1" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline_content" app:layout_marginRight="@dimen/keyline" style="@style/Text_Body1" />
+        </FrameLayout>
+        <FrameLayout app:id="@+id/text2_layout" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/keyline">
+            <com.gumtree.android.common.views.TintImageView app:layout_marginLeft="@dimen/keyline" app:src="@drawable/ic_done_white_24dp" app:supportTintColor="?attr/colorAccentDark" style="@style/ImageView_Icon" />
+            <TextView app:id="@+id/text2" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline_content" app:layout_marginRight="@dimen/keyline" style="@style/Text_Body1" />
+        </FrameLayout>
+        <FrameLayout app:id="@+id/text3_layout" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/keyline">
+            <com.gumtree.android.common.views.TintImageView app:layout_marginLeft="@dimen/keyline" app:src="@drawable/ic_done_white_24dp" app:supportTintColor="?attr/colorAccentDark" style="@style/ImageView_Icon" />
+            <TextView app:id="@+id/text3" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline_content" app:layout_marginRight="@dimen/keyline" style="@style/Text_Body1" />
+        </FrameLayout>
+    </LinearLayout>
+    <View app:background="@drawable/shadow_bottom" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x501" app:layout_above="@+id/content" />
+</RelativeLayout>

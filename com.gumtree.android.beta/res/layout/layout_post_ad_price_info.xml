@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/price_info_root" app:background="0x106000b" app:layout_width="match_parent" app:layout_height="wrap_content"
+    <RelativeLayout app:id="@+id/postad_info_container" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline" app:layout_marginTop="@dimen/keyline_quarter" app:layout_marginRight="@dimen/keyline" app:layout_marginBottom="@dimen/keyline_quarter">
+        <TextView app:textSize="16sp" app:textColor="@color/berry" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/postad_price_info_amount" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_centerVertical="true" />
+        <com.gumtree.android.common.views.TintImageView app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/postad_price_show_description" app:background="?attr/selectableItemBackgroundBorderless" app:padding="@dimen/keyline_quarter" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_info_outline_white_24dp" app:layout_alignParentRight="true" app:supportTintColor="?attr/colorIconAction" />
+    </RelativeLayout>
+    <LinearLayout app:orientation="vertical" app:id="@+id/postad_price_info_description_container" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline" app:layout_marginRight="@dimen/keyline" app:layout_below="@+id/postad_info_container">
+        <View app:background="?unknown_attr_ref: 1010038" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x40000031" />
+        <TextView app:textSize="16sp" app:textColor="@color/bark" app:id="@+id/postad_price_info_description" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/keyline_quarter" app:layout_marginBottom="@dimen/keyline_quarter" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:paddingLeft="@dimen/keyline_quarter" app:paddingRight="@dimen/keyline_quarter" app:clickable="true" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline" app:layout_marginTop="@dimen/keyline_half" app:layout_marginRight="@dimen/keyline" app:layout_marginBottom="@dimen/keyline_half" style="@style/Button_PrimaryAction">
+    <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_centerInParent="true">
+        <TextView app:textColor="@color/white_translucent" app:id="@+id/vip_action_buy" app:paddingRight="4dp" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/text_buy_it_ebay" />
+        <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_toRightOf="@+id/vip_action_buy" app:srcCompat="@drawable/ic_external_link_white_24dp" />
+    </LinearLayout>
+</RelativeLayout>

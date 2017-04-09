@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <android.support.percent.PercentRelativeLayout app:orientation="horizontal" app:id="@+id/card" app:layout_width="match_parent" app:layout_height="wrap_content" style="@style/PromoteCards">
+        <LinearLayout app:orientation="vertical" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_widthPercent="75%"
+            <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:paddingBottom="@dimen/keyline_half" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                <TextView app:id="@+id/title_textView" app:layout_width="wrap_content" app:layout_height="wrap_content" style="@style/Text_Title" />
+                <ImageView app:id="@+id/information" app:paddingTop="2dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline_quarter" app:tint="?attr/colorIconAction" app:contentDescription="@string/promotion_information_label" app:srcCompat="@drawable/information_outline" />
+            </LinearLayout>
+            <TextView app:id="@+id/body_textView" app:paddingBottom="@dimen/keyline_half" app:layout_width="wrap_content" app:layout_height="wrap_content" style="@style/Text_Body2" />
+            <TextView app:id="@+id/bottom_textview" app:layout_width="wrap_content" app:layout_height="wrap_content" style="@style/Text_Body1" />
+            <Spinner app:id="@+id/bottom_spinner" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true" app:layout_alignParentBottom="true" app:layout_widthPercent="25%">
+            <CheckBox app:id="@+id/selected_checkbox" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>
+    <TextView app:id="@+id/disable_reason" app:layout_width="match_parent" app:layout_height="wrap_content" style="@style/PromoteCards_Message" />
+</LinearLayout>

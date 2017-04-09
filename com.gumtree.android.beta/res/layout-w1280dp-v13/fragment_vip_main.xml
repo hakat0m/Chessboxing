@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="?attr/backgroundColorSecondary" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout app:id="@+id/main_content" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout app:theme="@style/ThemeOverlay_AppCompat_Dark_ActionBar" app:id="@+id/appbar" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <android.support.design.widget.CollapsingToolbarLayout app:id="@+id/collapsing_toolbar" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_scrollFlags="3" app:contentScrim="?attr/colorPrimary">
+                <FrameLayout app:id="@+id/fragment_layout_pager_holder" app:fitsSystemWindows="true" app:descendantFocusability="blocksDescendants" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_collapseMode="2" />
+                <android.support.v7.widget.Toolbar app:id="@+id/frag_toolbar" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f01006d" app:layout_collapseMode="1">
+                    <TextView app:textAppearance="@style/TextAppearance_AppCompat_Widget_ActionBar_Title" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/toolbar_title" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="wrap_content" app:singleLine="true" />
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.widget.NestedScrollView app:id="@+id/scroll" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout app:orientation="horizontal" app:id="@+id/scrollContent" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="80dp" app:baselineAligned="false">
+                <RelativeLayout app:paddingLeft="15dp" app:paddingRight="15dp" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_marginBottom="100dp" app:layout_weight="1.0">
+                    <FrameLayout app:id="@+id/fragment_vip_title_holder" app:fitsSystemWindows="true" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                    <FrameLayout app:id="@+id/fragment_vip_price_holder" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/fragment_vip_title_holder" />
+                    <FrameLayout app:id="@+id/fragment_vip_attr_holder" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/fragment_vip_price_holder" />
+                    <FrameLayout app:id="@+id/fragment_vip_partnership_holder" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/fragment_vip_attr_holder" />
+                    <FrameLayout app:id="@+id/fragment_vip_details_holder" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/fragment_vip_partnership_holder" />
+                    <FrameLayout app:id="@+id/fragment_vip_seller_other_items_holder" app:visibility="gone" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/fragment_vip_details_holder" />
+                    <FrameLayout app:id="@+id/fragment_vip_car_check_holder" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/fragment_vip_seller_other_items_holder" />
+                </RelativeLayout>
+                <RelativeLayout app:layout_width="UNKNOWN_DATA_0x15401" app:layout_height="wrap_content" app:layout_marginBottom="120dp">
+                    <FrameLayout app:id="@+id/fragment_vip_mpu_holder" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f080004" app:layout_marginTop="23dp" />
+                    <FrameLayout app:id="@+id/fragment_vip_map_holder" app:descendantFocusability="blocksDescendants" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x7f080003" app:layout_marginLeft="@dimen/keyline" app:layout_marginTop="38dp" app:layout_marginRight="@dimen/keyline" app:layout_marginBottom="14dp" app:layout_below="@+id/fragment_vip_mpu_holder" />
+                    <FrameLayout app:id="@+id/fragment_vip_report_ad_holder" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/fragment_vip_map_holder" />
+                    <FrameLayout app:id="@+id/fragment_vip_ad_ref_holder" app:paddingLeft="10dp" app:paddingRight="10dp" app:visibility="gone" app:descendantFocusability="blocksDescendants" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/fragment_vip_report_ad_holder" />
+                    <FrameLayout app:id="@+id/fragment_vip_textlink_holder" app:descendantFocusability="blocksDescendants" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/keyline_2x" app:minHeight="70dp" app:layout_below="@+id/fragment_vip_report_ad_holder" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+    <FrameLayout app:id="@+id/fragment_vip_contact_holder" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentBottom="true" />
+    <View app:background="@color/divider" app:layout_width="UNKNOWN_DATA_0x40000031" app:layout_height="match_parent" app:layout_alignParentLeft="true" />
+</RelativeLayout>

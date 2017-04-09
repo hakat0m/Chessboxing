@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <include app:id="@+id/toolbar" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentTop="true" layout="@layout/toolbar" />
+    <RelativeLayout app:id="@+id/location_container" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/keyline" app:layout_marginTop="@dimen/keyline" app:layout_marginRight="@dimen/keyline">
+        <android.support.design.widget.TextInputLayout app:id="@+id/location_text_input_layout" app:layout_width="match_parent" app:layout_height="wrap_content" app:hint="@string/post_ad_postcode_or_location">
+            <com.gumtree.android.location.views.CustomAutoCompleteTextView app:id="@+id/location_search_box" app:layout_width="match_parent" app:layout_height="wrap_content" app:completionThreshold="1" app:layout_below="@+id/location_text_input_layout" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+    <FrameLayout app:paddingLeft="@dimen/keyline" app:paddingRight="@dimen/keyline" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <TextView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/postad_edittext_inner_padding" app:layout_marginRight="@dimen/postad_edittext_inner_padding" app:text="@string/post_ad_wont_show_postcode" style="@style/InformationMessage" />
+    </FrameLayout>
+    <FrameLayout app:id="@+id/location_current_location" app:background="?attr/selectableItemBackground" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101004d">
+        <ImageView app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_marginLeft="@dimen/keyline" app:tint="?attr/colorIconAction" app:srcCompat="@drawable/ic_gps_fixed_black_24dp" />
+        <TextView app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginLeft="@dimen/keyline_content_minus_keyline" app:text="@string/location_use_current_location" style="@style/Text_Body1" />
+    </FrameLayout>
+</LinearLayout>

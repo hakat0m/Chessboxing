@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="0" android:id="false" android:paddingRight="12dp" android:layout_width="-1" android:layout_height="-2" android:minHeight="64dp">
+	<ImageView android:id="false" android:background="res/drawable/notification_tile_bg.xml" android:layout_width="64dp" android:layout_height="64dp" android:scaleType="5" />
+	<FrameLayout android:id="false" android:paddingLeft="12dp" android:paddingTop="10dp" android:layout_width="-1" android:layout_height="-2" android:layout_weight="{4:1065353216}" />
+	<FrameLayout android:id="false" android:paddingLeft="12dp" android:paddingTop="12dp" android:layout_width="-2" android:layout_height="-2">
+		<include android:layout_gravity="8388661" android:visibility="2" android:layout_width="-2" android:layout_height="-2" layout="@layout/notification_template_part_time" />
+		<LinearLayout android:layout_gravity="8388693" android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="18dp">
+			<TextView android:textAppearance="null" android:layout_gravity="17" android:id="false" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+			<ImageView android:layout_gravity="17" android:id="false" android:visibility="2" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="8dp" android:scaleType="5" />
+		</LinearLayout>
+	</FrameLayout>
+</LinearLayout>

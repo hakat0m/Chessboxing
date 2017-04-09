@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/message_text" android:maxWidth="250dp" android:layout_alignParentRight="true" style="@style/MessageBubble_Blue" />
+    <ImageView android:id="@+id/message_sync_icon" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" android:layout_marginLeft="60dp" android:layout_marginRight="@dimen/keyline" android:src="@drawable/ic_mc_waiting" android:layout_toLeftOf="@+id/message_text" android:layout_centerVertical="true" />
+    <TextView android:ellipsize="end" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/message_details" android:paddingLeft="@dimen/keyline" android:paddingRight="@dimen/keyline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginRight="@dimen/keyline" android:text="@string/me" android:singleLine="true" android:layout_below="@+id/message_text" android:layout_alignParentRight="true" style="@style/Text_Caption" />
+</RelativeLayout>

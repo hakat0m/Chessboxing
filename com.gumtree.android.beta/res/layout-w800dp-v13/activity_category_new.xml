@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/backgroundColorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar" />
+    <FrameLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/category_fragment_holder" android:background="@drawable/background_left_right_shadow" android:layout_width="UNKNOWN_DATA_0x7f080054" android:layout_height="match_parent" />
+</LinearLayout>

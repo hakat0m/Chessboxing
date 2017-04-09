@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/vip_main" android:background="?attr/backgroundColorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/vip_srp_container" android:layout_width="UNKNOWN_DATA_0x7f080046" android:layout_height="match_parent" />
+        <FrameLayout android:id="@+id/vip_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout> />

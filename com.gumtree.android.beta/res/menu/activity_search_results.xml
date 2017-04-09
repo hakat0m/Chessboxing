@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:icon="@drawable/ic_bell_plus_white" app:id="@+id/menu_set_search_alert" app:title="@string/menu_set_search_alert" app:showAsAction="always" />
+</menu>

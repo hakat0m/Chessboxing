@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar app:id="@+id/apptentive_toolbar" app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="?attr/actionBarSize" style="@style/Apptentive_Style_Toolbar" />
+    <FrameLayout app:id="@+id/apptentive_vp_container" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/apptentive_toolbar">
+        <android.support.v4.view.ViewPager app:id="@+id/apptentive_vp" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

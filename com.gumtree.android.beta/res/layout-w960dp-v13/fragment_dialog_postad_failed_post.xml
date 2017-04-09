@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true">
+    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="?attr/backgroundColorTertiary" android:paddingLeft="@dimen/keyline" android:paddingTop="@dimen/keyline_2x" android:paddingRight="@dimen/keyline" android:paddingBottom="@dimen/keyline_2x" android:layout_width="UNKNOWN_DATA_0x7f080045" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline" android:layout_marginRight="@dimen/keyline" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:id="@+id/confirmation_post_failed_title" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/post_ad_confirmation_post_failed_title" style="@style/PostAd_ConfirmationText" />
+        <TextView android:id="@+id/confirmation_post_failed_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/post_ad_confirmation_post_failed_subtitle" style="@style/PostAd_ConfirmationText_Text2" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keyline_2x">
+            <TextView android:id="@+id/confirmation_post_failed_button_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_ad_confirmation_close" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/PostAdConfirmationButtonNoBackground" />
+            <Button android:id="@+id/confirmation_post_failed_button_find_out_more" android:padding="@dimen/keyline" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_ad_confirmation_failed_post_ad" android:layout_alignParentRight="true" style="@style/Button_PrimaryAction_NoHeight" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

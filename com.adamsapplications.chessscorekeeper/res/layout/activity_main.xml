@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+	<TextView android:textAppearance="{2:16842816}" android:textColor="6600" android:gravity="1" android:layout_gravity="1" android:id="false" android:background="dedede" android:layout_width="-2" android:layout_height="-2" android:text="Score = 0/0" />
+	<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+		<LinearLayout android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="- White Queen" android:layout_weight="{4:1065353216}" android:onClick="wqm" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="- White Bishop" android:layout_weight="{4:1065353216}" android:onClick="wbm" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="- White Knight" android:layout_weight="{4:1065353216}" android:onClick="wkm" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="- White Rook" android:layout_weight="{4:1065353216}" android:onClick="wrm" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="- White Pawn" android:layout_weight="{4:1065353216}" android:onClick="wpm" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="+ White Queen" android:layout_weight="{4:1065353216}" android:onClick="wqp" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="+ White Bishop" android:layout_weight="{4:1065353216}" android:onClick="wbp" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="+ White Knight" android:layout_weight="{4:1065353216}" android:onClick="wkp" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="+ White Rook" android:layout_weight="{4:1065353216}" android:onClick="wrp" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="+ White Pawn" android:layout_weight="{4:1065353216}" android:onClick="wpp" />
+		</LinearLayout>
+		<LinearLayout android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="- Black Queen" android:layout_weight="{4:1065353216}" android:onClick="bqm" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="- Black Bishop" android:layout_weight="{4:1065353216}" android:onClick="bbm" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="- Black Knight" android:layout_weight="{4:1065353216}" android:onClick="bkm" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="- Black Rook" android:layout_weight="{4:1065353216}" android:onClick="brm" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="- Black Pawn" android:layout_weight="{4:1065353216}" android:onClick="bpm" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="+ Black Queen" android:layout_weight="{4:1065353216}" android:onClick="bqp" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="+ Black Bishop" android:layout_weight="{4:1065353216}" android:onClick="bbp" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="+ Black Knight" android:layout_weight="{4:1065353216}" android:onClick="bkp" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="+ Black Rook" android:layout_weight="{4:1065353216}" android:onClick="brp" />
+			<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="+ Black Pawn" android:layout_weight="{4:1065353216}" android:onClick="bpp" />
+		</LinearLayout>
+	</LinearLayout>
+	<Button android:textColor="6600" android:layout_width="-1" android:layout_height="-2" android:text="Reset" android:onClick="rst" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <include app:id="@+id/toolbar" layout="@layout/toolbar" />
+    <ScrollView app:layout_width="match_parent" app:layout_height="match_parent" app:layout_above="@+id/layout_manual_picker" app:layout_below="@+id/toolbar">
+        <fragment app:name="com.gumtree.android.locations.SetLocationFragment" app:id="@+id/fragment_location_selection" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    </ScrollView>
+    <View app:background="?attr/dividerColor" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f010204" app:layout_above="@+id/layout_manual_picker" />
+    <LinearLayout app:orientation="vertical" app:id="@+id/layout_manual_picker" app:paddingTop="@dimen/keyline" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentBottom="true">
+        <TextView app:textAppearance="@style/Text_SectionTitle" app:id="@+id/header_location_picker" app:paddingLeft="@dimen/keyline" app:paddingRight="@dimen/keyline" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/text_location_picker" />
+        <RelativeLayout app:id="@+id/layout_manually_pick_location" app:background="?attr/selectableItemBackground" app:paddingLeft="@dimen/keyline" app:paddingRight="@dimen/keyline" app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="?attr/listPreferredItemHeight">
+            <TextView app:textAppearance="@style/Text_Body1" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="@string/text_manually_select_location" app:singleLine="true" app:layout_toLeftOf="0x1020007" app:layout_alignParentLeft="true" app:layout_centerVertical="true" />
+            <com.gumtree.android.common.views.TintImageView app:id="0x1020007" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_keyboard_arrow_right_white_24dp" app:scaleType="center" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:supportTintColor="?attr/colorIconAction" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

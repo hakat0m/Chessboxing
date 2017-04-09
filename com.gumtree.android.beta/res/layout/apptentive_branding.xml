@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/apptentive_branding_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="?attr/colorAccent" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x401" />
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001">
+        <TextView android:textAppearance="@style/Apptentive_TextAppearance_Caption" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x2001" android:layout_marginBottom="2dp" android:text="Powered by" />
+        <ImageView android:layout_width="UNKNOWN_DATA_0x6401" android:layout_height="UNKNOWN_DATA_0x2301" android:src="@drawable/apptentive_logo_black" />
+    </LinearLayout>
+</LinearLayout>

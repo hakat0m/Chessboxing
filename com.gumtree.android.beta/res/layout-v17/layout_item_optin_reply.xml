@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gumtree.android.vip.reply.ui.OptInLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/keyline">
+    <CheckBox android:id="@+id/opt_in_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_negative" android:layout_marginTop="@dimen/gutter_negative" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textAppearance="@style/Text_Body1" android:id="@+id/opt_in_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_half" android:layout_toRightOf="@+id/opt_in_checkbox" android:layout_alignParentTop="true" android:layout_toEndOf="@+id/opt_in_checkbox" />
+</com.gumtree.android.vip.reply.ui.OptInLayout>

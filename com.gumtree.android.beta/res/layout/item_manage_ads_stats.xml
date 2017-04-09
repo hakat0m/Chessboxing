@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:background="?attr/dividerColor" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f010204" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/expandable" android:paddingTop="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="wrap_content"
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/Text_Body2" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/vip_views_stats" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_half" />
+            <TextView android:textAppearance="@style/Text_Caption" android:textColor="?unknown_attr_ref: 1010036" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/vip_views_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_half" android:layout_marginTop="@dimen/keyline_half" android:text="@string/vip_views" font="fonts/Roboto-Medium.ttf" />
+        </LinearLayout>
+        <View android:background="?attr/dividerColor" android:layout_width="UNKNOWN_DATA_0x7f010204" android:layout_height="UNKNOWN_DATA_0x3201" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/Text_Body2" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/srp_views_stats" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_half" />
+            <TextView android:textAppearance="@style/Text_Caption" android:textColor="?unknown_attr_ref: 1010036" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/srp_views_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_half" android:layout_marginTop="@dimen/keyline_half" android:text="@string/srp_views" font="fonts/Roboto-Medium.ttf" />
+        </LinearLayout>
+        <View android:background="?attr/dividerColor" android:layout_width="UNKNOWN_DATA_0x7f010204" android:layout_height="UNKNOWN_DATA_0x3201" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/Text_Body2" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/replies_views_stats" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_half" />
+            <TextView android:textAppearance="@style/Text_Caption" android:textColor="?unknown_attr_ref: 1010036" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/replies_views_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_half" android:layout_marginTop="@dimen/keyline_half" android:text="@string/replies_views" font="fonts/Roboto-Medium.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

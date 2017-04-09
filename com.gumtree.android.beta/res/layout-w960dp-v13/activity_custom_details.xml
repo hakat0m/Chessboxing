@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/contact_details_root" android:background="?attr/backgroundColorPrimary" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" style="@style/ToolbarStyle_NoSpace" />
+    <FrameLayout android:background="?attr/backgroundColorSecondary" android:layout_width="UNKNOWN_DATA_0x7f080045" android:layout_height="match_parent" android:layout_below="@+id/toolbar" android:layout_centerHorizontal="true">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/custom_details_container" android:paddingBottom="@dimen/keyline" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <FrameLayout android:id="@+id/custom_details_progress" android:background="?attr/backgroundColorPrimary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="@*style/Widget.ProgressBar" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

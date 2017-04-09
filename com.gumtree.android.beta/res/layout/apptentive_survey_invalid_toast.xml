@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/survey_invalid_toast_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="@style/Apptentive_TextAppearance_Subhead_Inverse" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/survey_invalid_toast_text" android:background="?attr/apptentiveValidationFailedColor" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:text="There are issues with your response." />
+</LinearLayout>

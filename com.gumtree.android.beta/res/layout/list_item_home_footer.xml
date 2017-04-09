@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dev.dworks.libs.astickyheader.ui.HeaderLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/footer_main" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f01009d" android:layout_marginLeft="@dimen/keyline">
+        <Button android:id="@+id/footer_button" android:focusable="true" android:layout_width="UNKNOWN_DATA_0x7801" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline" android:layout_marginRight="@dimen/keyline_half" android:text="@string/home_page_footer_button" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Button_PrimaryAction" />
+        <TextView android:textAppearance="@style/Text_Subhead" android:ellipsize="end" android:id="@+id/footer_home_page" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@+id/footer_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</dev.dworks.libs.astickyheader.ui.HeaderLayout>

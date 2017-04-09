@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/button_bar" android:layout_below="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/keyline" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@+id/bump_sub_title" android:paddingTop="@dimen/keyline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sub_title_telecapture" style="@style/Text_Subhead" />
+            <TextView android:paddingTop="@dimen/keyline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_telecapture_1" style="@style/Text_Body1" />
+            <TextView android:paddingTop="@dimen/keyline_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_telecapture_2" style="@style/Text_Body1" />
+            <TextView android:paddingTop="@dimen/keyline_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_telecapture_3" style="@style/Text_Body1" />
+            <TextView android:paddingTop="@dimen/keyline_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_telecapture_4" style="@style/Text_Body1" />
+            <TextView android:id="@+id/bump_end_title" android:paddingTop="@dimen/keyline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_end_telecapture" style="@style/Text_Subhead" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/button_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/btn_no_thanks" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="@string/text_no_thanks_btn" android:layout_weight="1.0" style="@style/Button_PrimaryAction" />
+        <Button android:id="@+id/btn_bump_it_up" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="@string/text_telecapture_button" android:layout_weight="1.0" style="@style/Button_PrimaryAction" />
+    </LinearLayout>
+</RelativeLayout>

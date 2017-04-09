@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/google_login_background_image" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_img_login" android:scaleType="centerCrop" />
+    <ScrollView android:id="@+id/google_login_content" android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:paddingLeft="@dimen/keyline" android:paddingTop="@dimen/keyline_content" android:paddingRight="@dimen/keyline" android:paddingBottom="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="?unknown_attr_ref: 1010039" android:id="@+id/google_login_page_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Text_Headline_Medium" />
+            <TextView android:textColor="?unknown_attr_ref: 1010039" android:id="@+id/google_login_page_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/keyline_2x" style="@style/Text_Headline" />
+            <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/google_login_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/keyline_content" android:src="@drawable/ic_gt_logo" />
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keyline">
+                <Button android:id="@+id/google_sign_in" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/keyline" style="@style/Button_Google" />
+                <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginBottom="@dimen/keyline_half" android:src="@drawable/ic_google" />
+            </FrameLayout>
+            <TextView android:textColor="?unknown_attr_ref: 1010039" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/or" style="@style/Text_Body1" />
+            <Button android:id="@+id/go_to_login_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keyline" android:text="@string/login_with_email" style="@style/Button_Plain" />
+            <Button android:id="@+id/go_to_registration_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keyline_quarter" android:text="@string/new_to_gumtree" style="@style/Button_Plain" />
+            <fragment android:id="@+id/facebook_login_fragment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keyline_half" class="com.gumtree.android.login.facebook.FacebookLoginFragment" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <menu name="activity_auth">res/menu/activity_auth.xml</menu>
+    <menu name="activity_category_picker">res/menu/activity_category_picker.xml</menu>
+    <menu name="activity_conversation">res/menu/activity_conversation.xml</menu>
+    <menu name="activity_home">res/menu/activity_home.xml</menu>
+    <menu name="activity_manage_ad">res/menu/activity_manage_ad.xml</menu>
+    <menu name="activity_post_ad">res/menu/activity_post_ad.xml</menu>
+    <menu name="activity_post_ad_subscreen">res/menu/activity_post_ad_subscreen.xml</menu>
+    <menu name="activity_reply_to_vip">res/menu/activity_reply_to_vip.xml</menu>
+    <menu name="activity_search_results">res/menu/activity_search_results.xml</menu>
+    <menu name="activity_srp">res/menu/activity_srp.xml</menu>
+    <menu name="activity_srp">res/menu-w600dp-v13/activity_srp.xml</menu>
+    <menu name="activity_srp">res/menu-w720dp-v13/activity_srp.xml</menu>
+    <menu name="activity_vip">res/menu/activity_vip.xml</menu>
+    <menu name="apptentive_message_center">res/menu/apptentive_message_center.xml</menu>
+    <menu name="fragment_conversation">res/menu/fragment_conversation.xml</menu>
+    <menu name="fragment_imagepicker">res/menu/fragment_imagepicker.xml</menu>
+    <menu name="fragment_inbox">res/menu/fragment_inbox.xml</menu>
+    <menu name="fragment_inbox_context">res/menu/fragment_inbox_context.xml</menu>
+    <menu name="fragment_manage_ad">res/menu/fragment_manage_ad.xml</menu>
+    <menu name="fragment_preview">res/menu/fragment_preview.xml</menu>
+    <menu name="refresh">res/menu/refresh.xml</menu>
+    <menu name="save">res/menu/save.xml</menu>
+    <menu name="sort_menu">res/menu/sort_menu.xml</menu>
+</resources>

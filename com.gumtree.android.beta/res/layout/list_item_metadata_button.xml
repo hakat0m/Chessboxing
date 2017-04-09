@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="wrap_content" app:layout_height="wrap_content"
+    <RelativeLayout app:id="@+id/field" app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="?attr/listPreferredItemHeightSmall">
+        <TextView app:textAppearance="@style/Text_Body1" app:id="0x1020015" app:saveEnabled="false" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_toLeftOf="@+id/fragment_refine_search_button" app:layout_alignParentLeft="true" app:layout_centerVertical="true" app:textAllCaps="false" />
+        <com.gumtree.android.common.views.TintImageView app:id="@+id/fragment_refine_search_button" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_keyboard_arrow_right_white_24dp" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:supportTintColor="?attr/colorIconAction" />
+    </RelativeLayout>
+    <TextView app:textAppearance="@style/Text_Caption" app:id="@+id/disclaimer" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_below="@+id/field" />
+</RelativeLayout>

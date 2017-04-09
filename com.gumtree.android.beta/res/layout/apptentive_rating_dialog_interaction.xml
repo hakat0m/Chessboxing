@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:paddingLeft="@dimen/apptentive_activity_side_padding_rating" android:paddingRight="@dimen/apptentive_activity_side_padding_rating" android:fadingEdge="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="?attr/apptentiveDialogBackground" android:layout_width="match_parent" android:layout_height="wrap_content"
+            <LinearLayout android:orientation="vertical" android:padding="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/Apptentive_TextAppearance_Title" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/apptentive_thank_you" />
+                <TextView android:textAppearance="@style/Apptentive_TextAppearance_Subhead_Secondary" android:autoLink="web|email|phone|map|all" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/body" android:paddingTop="@dimen/apptentive_dialog_content_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/button_container" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/rate" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x2401" android:layout_marginLeft="8dp" style="?attr/apptentiveInteractionButtonStyle" />
+                <Button android:id="@+id/remind" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x2401" android:layout_marginLeft="8dp" style="?attr/apptentiveInteractionButtonStyle" />
+                <Button android:id="@+id/decline" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x2401" android:layout_marginLeft="8dp" style="?attr/apptentiveInteractionButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

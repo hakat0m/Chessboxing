@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gumtree.android.vip.reply.ui.CVLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/cv_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:id="@+id/cv_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_negative" android:layout_marginTop="@dimen/gutter_negative" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textAppearance="@style/Text_Body1" android:id="@+id/cv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_half" android:text="@string/include_your_stored_cv" android:layout_toRightOf="@+id/cv_checkbox" android:layout_alignParentTop="true" />
+    <TextView android:textAppearance="@style/Text_Body2" android:id="@+id/cv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keyline_half" android:layout_toRightOf="@+id/cv_checkbox" android:layout_below="@+id/cv_message" />
+</com.gumtree.android.vip.reply.ui.CVLayout>

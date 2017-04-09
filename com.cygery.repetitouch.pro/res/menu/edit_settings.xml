@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item android:icon="res/drawable-xhdpi-v4/ic_navigation_accept.png" android:id="false" android:title="Save" app:showAsAction="5" />
+	<item android:icon="res/drawable-xhdpi-v4/ic_navigation_cancel.png" android:id="false" android:title="Cancel" app:showAsAction="5" />
+</menu>

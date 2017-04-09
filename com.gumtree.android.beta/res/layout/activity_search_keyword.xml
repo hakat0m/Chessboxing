@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:id="@+id/view_root" app:background="?attr/backgroundColorSecondary" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar app:theme="@style/ToolbarTheme_Inverse" app:id="@+id/toolbar" app:background="0x106000b" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f01006d" app:contentInsetStartWithNavigation="0dp" app:popupTheme="@style/ThemeOverlay_AppCompat_Light">
+        <com.gumtree.android.ad.search.keyword.ToolbarSearchKeywordView app:id="@+id/toolbar_keyword" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+    <View app:background="?attr/dividerColorLight" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+    <android.support.v7.widget.RecyclerView app:id="@+id/search_keyword_recycler" app:paddingBottom="@dimen/keyline_2x" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="match_parent" />
+</LinearLayout>

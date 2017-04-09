@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="@dimen/keyline" android:paddingRight="@dimen/keyline" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.gumtree.android.home.view.HalfDFPImageViewPlaceHolder android:id="@+id/dfp_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dfp_failure" />
+    <FrameLayout android:id="@+id/ads_dfp_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" /> />

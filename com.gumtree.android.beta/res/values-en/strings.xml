@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ebk_image_picker_action_set_as_gallery">Set as main</string>
+    <string name="ebk_image_picker_all_photos_folder_name">All Pictures</string>
+    <string name="ebk_image_picker_camera_error">Could not connect to camera</string>
+    <string name="ebk_image_picker_camera_folder_name">Camera Photos</string>
+    <string name="ebk_image_picker_cancel">Cancel</string>
+    <string name="ebk_image_picker_capture_button_text">Capture Button</string>
+    <string name="ebk_image_picker_change_flash_mode">Change Flash Mode</string>
+    <string name="ebk_image_picker_crop">Crop</string>
+    <string name="ebk_image_picker_delete">Delete</string>
+    <string name="ebk_image_picker_discard">Discard</string>
+    <string name="ebk_image_picker_done">Done</string>
+    <string name="ebk_image_picker_drag_to_order">Drag images to change order</string>
+    <string name="ebk_image_picker_folders_title">Folder Selection</string>
+    <string name="ebk_image_picker_gallery">Main Photo</string>
+    <string name="ebk_image_picker_grid_item_image">Image</string>
+    <string name="ebk_image_picker_image_selected">Image Selected</string>
+    <string name="ebk_image_picker_message_max_images_count_reached">You reached the maximum number of images</string>
+    <string name="ebk_image_picker_of">Of</string>
+    <string name="ebk_image_picker_optimizing_images">Optimizing images</string>
+    <string name="ebk_image_picker_permission_camera_and_folder_access_description">Let the app access your camera and photos in the settings. Of course we will only upload photos you choose.</string>
+    <string name="ebk_image_picker_permission_camera_and_folder_access_title">Photo access</string>
+    <string name="ebk_image_picker_rotate">Rotate</string>
+    <string name="ebk_image_picker_select_from_library">Select From Photo Library</string>
+    <string name="ebk_image_picker_settings_text">Settings</string>
+    <string name="ebk_image_picker_switch_camera">Switch Camera</string>
+</resources>

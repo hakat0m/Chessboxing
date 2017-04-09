@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/Text_Caption" android:textSize="10sp" android:textColor="0x106000b" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/list_item_sponsored_text" android:background="@color/blue" android:paddingLeft="@dimen/keyline" android:paddingRight="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bing_vip_header_title" />
+        <com.gumtree.android.vip.bing.BingAdVIPView android:id="@+id/vip_bing_1" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f08004f" />
+        <com.gumtree.android.vip.bing.BingAdVIPView android:id="@+id/vip_bing_2" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f08004f" />
+        <com.gumtree.android.vip.bing.BingAdVIPView android:id="@+id/vip_bing_3" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gumtree.android.report.ad.ReportAdReasonItemLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/selectableItemBackground" android:padding="@dimen/keyline_half" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1010387">
+    <TextView android:textAppearance="@style/Text_Body1" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/report_ad_reason_item_label" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</com.gumtree.android.report.ad.ReportAdReasonItemLayout>
